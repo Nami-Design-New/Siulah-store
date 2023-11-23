@@ -1,0 +1,2526 @@
+//Color Variable
+$clr_white: #fff;
+$clr_offwhite: rgba(255, 255, 255, 0.75);
+$clr_black: #000;
+$clr_cod: #111;
+$clr_emperor: #666666;
+$clr_catskill: #f9fafc;
+$clr_albastor: #f8f8f8;
+$clr_athens: #f3f4f6;
+$clr_carnation: #ef7822;
+$clr_pearl: #051124;
+$clr_mirage: #202c40;
+$clr_zodiac: #0a1b36;
+$clr_rhino: #363969;
+$clr_link: #ecf0f9;
+$clr_cove: #051124;
+
+/*---------------------------------
+          Mixins & Animation CSS
+-----------------------------------*/
+@mixin transition($time) {
+  -webkit-transition: $time;
+  transition: $time;
+}
+
+@mixin transform($tr_amt) {
+  -webkit-transform: $tr_amt;
+  -moz-transform: $tr_amt;
+  transform: $tr_amt;
+}
+
+@mixin transform-origin($trl_amt) {
+  transform-origin: $trl_amt;
+  -webkit-transform-origin: $trl_amt;
+  -moz-transform-origin: $trl_amt;
+  -ms-transform-origin: $trl_amt;
+  -o-transform-origin: $trl_amt;
+}
+
+@mixin transform-style($trm_amt) {
+  transform-style: $trm_amt;
+  -webkit-transform-style: $trm_amt;
+  -moz-transform-style: $trm_amt;
+  -ms-transform-style: $trm_amt;
+  -o-transform-style: $trm_amt;
+}
+
+%flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+%inline_flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+%flex_column_center {
+  @extend %flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+%flex_column_between {
+  @extend %flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+%flex_column_end {
+  @extend %flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+%align_center {
+  @extend %flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+%align_start {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+
+%align_end {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
+  align-items: flex-end;
+}
+%flex_justify_between {
+  @extend %flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+%flex_justify_end {
+  @extend %flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+%flex_justify_start {
+  @extend %flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+%flex_start {
+  @extend %flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+%flex_start {
+  @extend %flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  -ms-grid-row-align: flex-start;
+  align-items: flex-start;
+}
+
+%flex_between {
+  @extend %flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+%flex_end {
+  @extend %flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 575px) {
+  .xs-center {
+    text-align: center;
+  }
+  .xs-none {
+    display: none !important;
+  }
+  .smt-15 {
+    margin-top: 15px !important;
+  }
+  .breadcrumb-wrap {
+    padding: 110px 0 50px;
+    .breadcrumb-title {
+      .breadcrumb-menu {
+        li {
+          font-size: 14px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .breadcrumb-img {
+      img {
+        display: none;
+      }
+    }
+  }
+  .page-navigation {
+    margin: 15px 0 0;
+    .page-nav {
+      li {
+        a {
+          width: 36px;
+          height: 36px;
+          font-size: 16px;
+          line-height: 36px;
+          i {
+            font-size: 13px;
+            line-height: 42px;
+          }
+        }
+      }
+    }
+  }
+  //Hero CSS
+  .hero-wrap {
+    &.style1 {
+      .hero-img-wrap {
+        .hero-nft-info {
+          position: relative;
+          left: auto;
+          padding: 18px 20px;
+          width: 100%;
+          left: 50%;
+          margin-top: -55px;
+          .auction-info-wrap {
+            h3 {
+              font-size: 20px;
+            }
+            .auction-author-info {
+              .author-info {
+                .author-name {
+                  h6 {
+                    font-size: 14px;
+                  }
+                  a {
+                    font-size: 14px;
+                  }
+                }
+              }
+              .auction-item-stat {
+                h6,
+                span {
+                  font-size: 14px;
+                }
+              }
+            }
+            .nft-deadline {
+              margin: 20px 0 0;
+              span {
+                font-size: 14px;
+              }
+              .countdown {
+                .cdown {
+                  &:after {
+                    right: 5px;
+                    font-size: 18px;
+                  }
+                  span {
+                    font-size: 16px;
+                  }
+                  p {
+                    font-size: 14px;
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.style2 {
+      .hero-nft-item {
+        .author-info-wrap {
+          .author-info {
+            width: 100%;
+          }
+        }
+        .auction-info-wrap {
+          .auction-author-info {
+            .auction-deadline {
+              width: calc(100% - 100px);
+              margin-left: 10px;
+              .countdown {
+                margin-top: 10px;
+                .cdown {
+                  &:after {
+                    top: 45%;
+                    right: -6px;
+                    font-size: 16px;
+                  }
+                  span {
+                    font-size: 16px;
+                    display: block;
+                  }
+                  p {
+                    font-size: 13px;
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .btn {
+          margin-top: 20px;
+          background-color: $clr_pearl;
+          border-radius: 3px;
+          padding: 12px 20px;
+        }
+      }
+    }
+    &.style3 {
+      .hero-nft-slider {
+        padding: 10px 10px 0 10px;
+        &:after {
+          width: 100%;
+          height: calc(100% - 75px);
+        }
+      }
+    }
+  }
+  //Newsletter CSS
+  .newsletter-wrap {
+    .newsletter-form {
+      input {
+        padding: 12px 15px;
+        height: 54px;
+      }
+      button {
+        position: relative;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 20px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container-fluid {
+    max-width: 540px;
+    padding: 0 15px;
+  }
+  .breadcrumb-wrap {
+    padding: 90px 0 25px;
+  }
+  .breadcrumb-img img {
+    max-width: 180px;
+  }
+  //Hero CSS
+  .hero-wrap {
+    &.style1 {
+      .hero-img-wrap {
+        .hero-nft-info {
+          width: 440px;
+          left: calc(50% + 5px);
+        }
+      }
+    }
+    &.style2 {
+      .hero-nft-item {
+        .auction-info-wrap {
+          .auction-author-info {
+            .auction-deadline {
+              width: calc(100% - 110px);
+              margin-left: 20px;
+              .countdown {
+                .cdown {
+                  &:after {
+                    top: 45%;
+                    right: -3px;
+                    font-size: 18px;
+                  }
+                  span {
+                    font-size: 22px;
+                  }
+                  p {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //Author Profile
+  .author-item-tab {
+    .nav-tabs {
+      padding: 20px;
+      .nav-item {
+        margin-right: 10px;
+        .nav-link {
+          padding: 12px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  p,
+  input,
+  textarea {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .sm-none {
+    display: none !important;
+  }
+  .sm-center {
+    text-align: center !important;
+  }
+
+  .mb-50 {
+    margin-bottom: 30px !important;
+  }
+
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-50 {
+    padding-bottom: 0px;
+  }
+
+  .pb-60 {
+    padding-bottom: 15px;
+  }
+
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+
+  .mt-100 {
+    margin-top: 50px !important;
+  }
+
+  .mb-100 {
+    margin-bottom: 50px !important;
+  }
+  .mtb-100 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .pt-70 {
+    padding-top: 20px;
+  }
+
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+
+  .pb-75 {
+    padding-bottom: 25px;
+  }
+
+  .pb-50 {
+    padding-bottom: 0px;
+  }
+
+  .pt-75 {
+    padding-top: 25px;
+  }
+
+  .mb-40 {
+    margin-bottom: 25px !important;
+  }
+  .section-title.mb-50,
+  .content-title.mb-50 {
+    margin-bottom: 30px !important;
+  }
+  .section-title.mb-40 {
+    margin-bottom: 20px !important;
+  }
+  .link,
+  .btn {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 12px 25px 12px;
+  }
+  .back-to-top {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    right: 10px;
+
+    i {
+      font-size: 18px;
+    }
+  }
+  .section-title,
+  .content-title {
+    &.style2,
+    &.style3 {
+      span {
+        font-size: 12px;
+      }
+    }
+    &.style1 {
+      span {
+        font-size: 14px;
+      }
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+  .breadcrumb-title {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .breadcrumb-menu {
+      li {
+        font-size: 14px;
+        &:after {
+          font-size: 16px;
+          top: -1px;
+        }
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .owl-carousel {
+    .owl-nav {
+      button {
+        &.owl-prev,
+        &.owl-next {
+          width: 40px;
+          height: 40px;
+          i {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .social-profile {
+    li {
+      a {
+        width: 40px;
+        height: 40px;
+        i {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  //Card Title CSS
+  .author-card.style1 .author-card-info h3,
+  .author-card.style2 .author-card-info h3,
+  .author-card.style5 .author-card-info h3,
+  .author-card.style3 .author-card-info h3,
+  .author-card.style4 .author-card-info h3,
+  .auction-card h3,
+  .promo-card h3,
+  .activity-card .activity-card-info h3,
+  .seller-card .seller-info h3,
+  .collection-card .collection-info-wrap .collection-info h3,
+  .team-card .team-info h3,
+  .promo-card.style4 .promo-info h3,
+  .auction-card .auction-info-wrap .auction-title h3,
+  .blog-card .blog-info h3 {
+    font-size: 20px;
+  }
+  //Hero css
+  .hero-wrap {
+    .hero-content {
+      span {
+        margin-bottom: 8px;
+      }
+      h1 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+      .hero-btn {
+        a {
+          padding: 10px 20px 10px;
+          &:nth-child(1) {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &.style1,
+    &.style2,
+    &.style3 {
+      .hero-content {
+        h1 {
+          font-size: 28px;
+        }
+        p {
+          padding-right: 10px;
+        }
+      }
+    }
+    &.style2 {
+      .hero-nft-item {
+        padding: 20px;
+        .auction-info-wrap {
+          h4 {
+            font-size: 20px;
+            margin: 0 0 15px;
+          }
+        }
+      }
+    }
+    &.style3 {
+      .nft-slide-item {
+        .nft-deadline-wrap {
+          position: relative;
+          bottom: auto;
+          left: auto;
+          padding: 20px;
+          width: 100%;
+          .btn {
+            padding: 10px 20px;
+            order: 2;
+            width: 100%;
+            display: block;
+          }
+          .nft-deadline {
+            margin-left: 0;
+            margin-bottom: 15px;
+            order: 1;
+            span {
+              font-size: 14px;
+            }
+            .countdown {
+              .cdown {
+                margin-right: 6px;
+                padding-left: 6px;
+                &:after {
+                  font-size: 16px;
+                }
+                span {
+                  font-size: 16px;
+                }
+                p {
+                  font-size: 14px;
+                  top: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //Slider btn css
+  .blog-slider-one,
+  .auction-slider-one,
+  .auction-slider-two {
+    &.owl-carousel {
+      .owl-nav {
+        justify-content: center;
+        margin-top: 25px;
+        button {
+          &.owl-prev,
+          &.owl-next {
+            position: relative;
+            top: auto;
+            @include transform(translateY(0));
+          }
+          &.owl-prev {
+            left: auto;
+            margin-right: 8px;
+          }
+          &.owl-next {
+            right: auto;
+            margin-left: 8px;
+          }
+        }
+      }
+      .owl-dots {
+        display: none;
+      }
+      &.style3 {
+        .owl-nav {
+          position: relative;
+          top: auto;
+          bottom: 0;
+          right: auto;
+          justify-content: center;
+          margin-bottom: 25px;
+          button {
+            &.owl-prev {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  //Auction Card CSS
+  .auction-card {
+    .auction-img {
+      .followers,
+      .item-popularity {
+        top: 20px;
+        right: 20px;
+        font-size: 14px;
+        padding: 6px 12px 7px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+    &.style1 {
+      .auction-info-wrap {
+        padding: 18px 20px 20px;
+      }
+    }
+    &.style1,
+    &.style2,
+    &.style5,
+    &.style7 {
+      .auction-info-wrap {
+        .auction-author-info {
+          margin: 20px 0;
+          .author-info {
+            .author-name {
+              h6 {
+                font-size: 14px;
+                a {
+                  font-size: 14px;
+                }
+              }
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+          .auction-item-stat,
+          .auction-bid {
+            h6 {
+              font-size: 14px;
+              margin: 0 0 5px;
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+        .auction-stock {
+          .btn {
+            padding: 7px 14px;
+          }
+        }
+      }
+    }
+    &.style2,
+    &.style5,
+    &.style7 {
+      .countdown {
+        .cdown {
+          padding: 14px 20px 18px;
+          &:after {
+            right: -6px;
+            font-size: 18px;
+          }
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+      .auction-info-wrap {
+        .auction-author-info {
+          margin-bottom: 22px;
+        }
+      }
+    }
+    &.style2 {
+      .countdown {
+        width: calc(100% - 40px);
+        margin: -40px auto 0;
+      }
+      .auction-info-wrap {
+        padding: 20px;
+      }
+    }
+    &.style3,
+    &.style4,
+    &.style6 {
+      .auction-info-wrap {
+        h3 {
+          margin-bottom: 20px;
+        }
+        .auction-author-info {
+          .author-info {
+            .author-name {
+              h6 {
+                font-size: 14px;
+              }
+              a {
+                font-size: 14px;
+              }
+            }
+          }
+          .auction-bid {
+            h6 {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    &.style3 {
+      .auction-info-wrap {
+        padding: 18px 20px 20px;
+      }
+    }
+    &.style4 {
+      .auction-img {
+        .item-popularity {
+          left: 20px;
+        }
+      }
+      .auction-info-wrap {
+        padding: 20px 0 0;
+      }
+    }
+    &.style5 {
+      padding: 20px;
+    }
+    &.style7 {
+      .auction-info-wrap {
+        padding: 20px;
+      }
+    }
+  }
+  .auction-slider-one.owl-carousel .owl-dots .owl-dot span,
+  .auction-slider-two.owl-carousel .owl-dots .owl-dot span,
+  .blog-slider-one.owl-carousel .owl-dots .owl-dot span {
+    width: 20px;
+  }
+  .auction-slider-one.owl-carousel .owl-dots .owl-dot.active span,
+  .auction-slider-two.owl-carousel .owl-dots .owl-dot.active span,
+  .blog-slider-one.owl-carousel .owl-dots .owl-dot.active span {
+    width: 28px;
+  }
+  //Author Card CSS
+  .author-card {
+    &.style2,
+    &.style4,
+    &.style5 {
+      .author-card-info {
+        padding: 0 20px 18px;
+        .btn {
+          padding: 8px 16px 7px;
+          font-size: 14px;
+        }
+      }
+    }
+    &.style1,
+    &.style2,
+    &.style3,
+    &.style4,
+    &.style5 {
+      .author-card-info {
+        p {
+          img {
+            max-width: 9px;
+          }
+        }
+      }
+    }
+    &.style5 {
+      .author-card-info {
+        .author-name {
+          h3 {
+            a {
+              color: $clr_white;
+              &:hover {
+                color: $clr_carnation;
+              }
+            }
+          }
+        }
+        .btn {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+  .author-slider-one {
+    &.owl-carousel {
+      .owl-nav {
+        position: relative;
+        top: auto;
+        bottom: 0;
+        justify-content: center;
+        right: auto;
+        margin-top: 25px;
+        button {
+          &.owl-prev {
+            margin-right: 8px;
+          }
+          &.owl-next {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+  //Author Profile CSS
+  .author-details-box {
+    padding: 20px;
+    .author-img {
+      width: 130px;
+      height: 130px;
+    }
+    .single-author-info {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+      h3 {
+        font-size: 20px;
+      }
+    }
+    .author-metainfo-wrap {
+      .author-metainfo {
+        justify-content: flex-start;
+        .edit-profile {
+          width: 45px;
+          height: 45px;
+          margin-left: 0;
+          margin-right: 0;
+          i {
+            font-size: 16px;
+          }
+        }
+        .share-profile,
+        .item-option {
+          margin-left: 0px;
+          margin-right: 8px;
+          span {
+            width: 45px;
+            height: 45px;
+            i {
+              font-size: 16px;
+            }
+          }
+        }
+        .share-profile {
+          .social-profile {
+            bottom: -110px;
+            left: 0;
+            z-index: 10;
+            li {
+              a {
+                width: 45px;
+                height: 45px;
+                i {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+        .btn {
+          padding: 9px 15px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  //Author Profile
+  .author-item-tab {
+    .nav-tabs {
+      padding: 20px;
+      .nav-item {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .nav-link {
+          padding: 12px 20px;
+          font-size: 14px;
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  //CTA Section CSS
+  .cta-wrap {
+    &.style2,
+    &.style3 {
+      padding-left: 25px;
+      padding-right: 25px;
+      .cta-img-wrap {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  //Promo Card CSS
+  .promo-card {
+    padding: 20px;
+    .count-num {
+      top: 20px;
+      right: 20px;
+      font-size: 40px;
+    }
+    &.style1 {
+      .promo-info {
+        h3 {
+          margin: 0 0 10px;
+        }
+      }
+    }
+    &.style2,
+    &.style3 {
+      .promo-top {
+        padding: 20px 20px 18px;
+        h3 {
+          margin: 0;
+        }
+      }
+      .promo-info {
+        padding: 20px;
+      }
+    }
+    &.style4 {
+      padding: 20px;
+    }
+  }
+  .promo-card {
+    &.style4 {
+      padding: 20px;
+    }
+  }
+  //Collection CSS
+  .collection-card .collection-info-wrap {
+    padding: 0 20px 20px;
+  }
+  .create-collection-form {
+    .form-group {
+      select {
+        font-size: 14px;
+      }
+    }
+    .checkbox {
+      margin-bottom: 20px;
+    }
+  }
+  .seller-card {
+    padding: 20px;
+    .seller-social {
+      margin-top: 20px;
+    }
+  }
+  //Activity Card CSS
+  .activity-card {
+    position: relative;
+    padding: 20px;
+    .activity-card-img {
+      width: 100%;
+      margin: 0 0 20px;
+    }
+    .activity-card-metainfo {
+      width: 100%;
+      li {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        font-size: 14px;
+      }
+    }
+    .activity-card-info {
+      margin: 15px 0 0;
+      width: 100%;
+      padding-right: 50px;
+    }
+    .activity-card-action {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+  //Auction Filter CSS
+  .auction-filter {
+    .form-group {
+      label {
+        font-size: 18px;
+      }
+    }
+    &.style2 {
+      .form-group {
+        select {
+          height: 54px;
+          font-size: 14px;
+        }
+        input {
+          height: 54px;
+          font-size: 14px;
+        }
+        button {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+  //Place Bid CSS
+  .bidding-popup {
+    h2 {
+      font-size: 22px;
+    }
+    h6 {
+      font-size: 14px;
+    }
+    .bidding-form {
+      margin-top: 25px;
+      .form-group {
+        margin-bottom: 20px;
+        input {
+          height: 52px;
+        }
+      }
+    }
+    .bidding-tablelist {
+      margin-bottom: 20px;
+      li {
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  //Blog CSS
+  .blog-card {
+    &.style1 {
+      .blog-info {
+        padding: 20px;
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &.style3 {
+      .blog-info {
+        padding: 20px;
+        h3 {
+          margin: 15px 0 12px;
+        }
+        .blog-author-info {
+          .blog-date {
+            width: 100%;
+            margin: 15px 0 0;
+          }
+        }
+      }
+    }
+  }
+  //Item Details CSS
+  .item-desc .single-item-author {
+    margin-bottom: 20px;
+    padding-bottom: 22px;
+  }
+  .item-desc .item-deadline-wrap .item-deadline {
+    width: 100%;
+    margin-left: 0;
+  }
+  .item-desc .single-item-author .author-info,
+  .item-desc .item-deadline-wrap .single-item-bid {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .item-desc .single-item-author .single-item-bid {
+    width: 100%;
+  }
+  .item-desc {
+    .item-title {
+      .item-title-left {
+        h2 {
+          font-size: 23px;
+          margin: 0 0 15px;
+        }
+      }
+      .item-title-right {
+        width: 100%;
+        margin: 20px 0 0;
+        justify-content: flex-start;
+        .share-profile,
+        .item-option {
+          position: relative;
+          margin-right: 10px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .item-desc .single-item-tab .item-history-wrap .history-item {
+    padding: 20px 15px;
+  }
+  .item-desc .item-deadline-wrap .item-deadline,
+  .item-desc .item-deadline-wrap .single-item-bid {
+    padding: 15px 20px;
+  }
+  .item-desc .item-deadline-wrap .item-deadline .countdown .cdown span {
+    font-size: 14px;
+  }
+  .item-desc .item-deadline-wrap .item-deadline .countdown .cdown p {
+    font-size: 13px;
+  }
+  .item-desc .single-item-tab .item-history-wrap .history-item .item-bid h6,
+  .item-desc .single-item-tab .item-history-wrap .history-item .author-name h6 {
+    font-size: 15px;
+  }
+  .item-desc .single-item-tab .item-desc {
+    padding: 20px 20px 10px;
+  }
+  .item-desc .item-title .item-title-right .item-option .more-option {
+    right: auto;
+    left: 0;
+  }
+  .item-desc .item-title .item-title-right .share-profile .social-profile {
+    bottom: -162px;
+    left: 1px;
+  }
+  //Testimonial CSS
+  .testimonial-card {
+    padding: 0 10px;
+    .client-quote {
+      max-width: 100%;
+      margin: 0 0 20px;
+    }
+    .client-info {
+      h5 {
+        font-size: 18px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .testimonial-slider-one {
+    &.owl-carousel {
+      .owl-nav {
+        justify-content: center;
+        margin-top: 30px;
+        button {
+          &.owl-prev,
+          &.owl-next {
+            position: relative;
+            top: auto;
+            bottom: 0;
+            @include transform(translateY(0));
+          }
+          &.owl-prev {
+            left: auto;
+            margin-right: 8px;
+          }
+          &.owl-next {
+            right: auto;
+            margin-left: 8px;
+          }
+        }
+      }
+      .owl-dots {
+        display: none;
+      }
+    }
+  }
+  //Contact CSS
+  .checkbox label {
+    font-size: 14px;
+  }
+  .checkbox label::before {
+    top: 3px;
+  }
+  .checkbox input:checked + label::after {
+    top: 6px;
+  }
+  .contact-content {
+    .content-title {
+      margin-bottom: 20px;
+    }
+  }
+  .contact-item {
+    padding: 25px;
+    margin: 42px 0 25px;
+    .contact-icon {
+      width: 75px;
+      height: 75px;
+      margin: -65px auto 20px;
+      i {
+        font-size: 32px;
+      }
+    }
+    .contact-info {
+      h3 {
+        font-size: 20px;
+      }
+      a,
+      p {
+        display: block;
+        margin: 0;
+        line-height: 1.7;
+        color: $clr_offwhite;
+        @include transition(0.3s);
+        padding: 0 25px;
+      }
+    }
+  }
+  #contactForm {
+    .form-group {
+      input {
+        height: 56px;
+        padding: 12px 15px;
+      }
+      textarea {
+        padding: 15px 15px;
+      }
+    }
+  }
+  //Page Navigation CSS
+  .page-nav {
+    li {
+      a {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+        line-height: 36px;
+        i {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  //Sign Up CSS
+  .login-bg {
+    &.style1,
+    &.style2 {
+      height: 300px;
+    }
+  }
+  .error-content {
+    margin-top: 70px;
+  }
+  //Blog Details CSS
+  article,
+  .terms-wrap {
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h4 {
+      font-size: 18px;
+    }
+    h5 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 15px;
+    }
+    ol {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    ul,
+    ol {
+      li {
+        font-size: 14px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .content-feature-list {
+      margin: 15px 0 15px;
+    }
+  }
+  article .author-info {
+    margin-bottom: 25px;
+  }
+  .post-author .post-author-info h4 {
+    font-size: 20px;
+  }
+  .wp-block-quote {
+    padding: 25px;
+    margin: 25px 0 25px;
+    .wp-quote-text {
+      width: calc(100% - 50px);
+      margin-left: 25px;
+      text-align: left;
+    }
+    .wp-quote-icon {
+      width: 25px;
+      height: auto;
+      i {
+        font-size: 34px;
+      }
+    }
+  }
+  .post-metainfo {
+    margin-bottom: 25px;
+    li {
+      margin-bottom: 0;
+    }
+  }
+  .post-img {
+    margin: 0 0 25px;
+  }
+  .author-info-wrap {
+    .author-info {
+      h6 {
+        font-size: 15px;
+      }
+    }
+  }
+  .reply-btn {
+    font-size: 14px;
+    margin-top: 12px;
+    padding: 12px 14px 12px;
+  }
+  .post-tag {
+    margin-bottom: 15px;
+
+    ul {
+      li {
+        a {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .post-author {
+    padding: 20px;
+    .post-author-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+    }
+    .post-author-info {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .comment-box-wrap {
+    padding: 20px;
+  }
+  .comment-item-wrap {
+    .comment-item {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      &.reply {
+        margin-left: 25px;
+      }
+      .comment-author-img {
+        width: 55px;
+        height: 55px;
+      }
+      .comment-author-wrap {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        .comment-author-name {
+          h5 {
+            font-size: 18px;
+            display: block;
+          }
+          .comment-date {
+            display: block;
+            margin-left: 0;
+            margin-top: 12px;
+            margin-bottom: 13px;
+            font-size: 14px;
+          }
+        }
+        .comment-text {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  #cmt-form {
+    .comment-form {
+      .form-group {
+        margin-bottom: 15px;
+        label {
+          font-size: 14px;
+        }
+        input {
+          height: 54px;
+        }
+      }
+      .form-check {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .sidebar {
+    .sidebar-widget {
+      padding: 20px;
+      h4 {
+        font-size: 18px;
+        margin: 0 0 20px;
+      }
+    }
+  }
+  .category-box {
+    ul {
+      li {
+        a {
+          font-size: 14px;
+          padding: 8px 0 8px 20px;
+          i {
+            top: 12px;
+          }
+          span {
+            font-size: 14px;
+          }
+        }
+        &:first-child {
+          a {
+            i {
+              top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tag-list {
+    ul {
+      li {
+        margin: 9px 6px 0px 0px;
+      }
+    }
+  }
+  //Account Section CSS
+  .login-form-wrap {
+    padding: 25px 20px 20px;
+    .login-header {
+      h3 {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+    }
+    .login-body {
+      .form-group {
+        margin-bottom: 10px;
+        label {
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+        input {
+          height: 50px;
+        }
+      }
+      .checkbox {
+        label {
+          font-size: 14px;
+        }
+      }
+      .btn {
+        padding: 12px;
+      }
+      .link {
+        font-size: 13px;
+      }
+    }
+  }
+  //Error Page
+  .error-content {
+    img {
+      max-width: 280px;
+    }
+    p {
+      margin: 0 auto 20px;
+      max-width: 300px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container-fluid {
+    max-width: 720px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+
+  .mt-100 {
+    margin-top: 70px !important;
+  }
+
+  .mb-100 {
+    margin-bottom: 70px !important;
+  }
+  .mtb-100 {
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+  }
+  .pb-50 {
+    padding-bottom: 20px;
+  }
+
+  .pb-60 {
+    padding-bottom: 35px;
+  }
+
+  .mt-100 {
+    margin-top: 70px !important;
+  }
+
+  .smb-25 {
+    margin-bottom: 25px;
+  }
+
+  .smb-70 {
+    margin-bottom: 70px !important;
+  }
+
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .pt-70 {
+    padding-top: 40px;
+  }
+
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+
+  .pb-75 {
+    padding-bottom: 45px;
+  }
+
+  .pb-50 {
+    padding-bottom: 20px;
+  }
+
+  .pt-75 {
+    padding-top: 45px;
+  }
+  .breadcrumb-title,
+  .section-title,
+  .content-title {
+    h2 {
+      font-size: 35px;
+    }
+  }
+  .breadcrumb-wrap {
+    padding: 120px 0 40px;
+  }
+  .breadcrumb-img img {
+    max-width: 220px;
+  }
+  //Hero css
+  .hero-wrap {
+    &.style1 {
+      .hero-img-wrap {
+        .hero-nft-info {
+          width: 440px;
+          left: calc(50% + 5px);
+        }
+      }
+    }
+    &.style2,
+    &.style3 {
+      .hero-content {
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+  //Slider btn CSS
+  .blog-slider-one,
+  .auction-slider-one,
+  .auction-slider-two {
+    &.owl-carousel {
+      .owl-nav {
+        button {
+          &.owl-prev,
+          &.owl-next {
+            background-color: rgba(255, 255, 255, 0.25);
+          }
+          &.owl-prev {
+            left: -25px;
+          }
+          &.owl-next {
+            right: -25px;
+          }
+        }
+      }
+    }
+  }
+  //Activity Card CSS
+  .activity-card {
+    .activity-card-img {
+      max-width: 125px;
+    }
+    .activity-card-info {
+      margin: 0 30px;
+    }
+  }
+  //CTA Section CSS
+  .cta-wrap {
+    &.style2,
+    &.style3 {
+      padding-left: 30px;
+      padding-right: 30px;
+      .cta-img-wrap {
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  //Sign Up CSS
+  .login-bg {
+    &.style1,
+    &.style2 {
+      height: 450px;
+    }
+  }
+  .error-content {
+    margin-top: 70px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .page-wrapper {
+    overflow-x: hidden !important;
+  }
+  .md-none {
+    display: none !important;
+  }
+  .mt-60 {
+    margin-top: 30px !important;
+  }
+  .md-center {
+    text-align: center !important;
+  }
+  //Hero css
+  .hero-wrap {
+    &.style1,
+    &.style2,
+    &.style3 {
+      padding: 110px 0 60px;
+      .hero-content {
+        margin-top: 30px;
+      }
+    }
+  }
+  //About CSS
+  .about-wrap {
+    .about-img-wrap {
+      margin-bottom: 25px;
+    }
+  }
+  //Item Details CSS
+  .single-item-img {
+    margin: 0 0 25px;
+    img {
+      width: 100%;
+    }
+  }
+  //Author Profile CSS
+  .author-details-box {
+    .author-metainfo-wrap {
+      margin-left: 0;
+      margin-right: auto;
+      margin-top: 25px;
+    }
+  }
+  //Sign Up CSS
+  .login-bg {
+    &.style1,
+    &.style2 {
+      margin-bottom: 30px;
+    }
+  }
+  //Newsletter CSS
+  .newsletter-form {
+    margin-top: 25px;
+  }
+  //Contact CSS
+  .contact-content {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-title,
+  .section-title,
+  .content-title {
+    h2 {
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+  .breadcrumb-wrap {
+    padding: 120px 0 40px;
+  }
+  //Hero css
+  .hero-wrap {
+    &.style1 {
+      .hero-img-wrap {
+        .hero-nft-info {
+          left: calc(50% + 25px);
+          width: 400px;
+          .auction-info-wrap {
+            .nft-deadline {
+              margin: 20px 0 0;
+              span {
+                display: block;
+                margin: 0 0 10px;
+                color: $clr_white;
+              }
+              .countdown {
+                .cdown {
+                  span {
+                    font-size: 18px;
+                  }
+                  p {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.style2 {
+      .hero-nft-item {
+        .author-info-wrap {
+          .btn {
+            padding: 18px 20px;
+          }
+        }
+      }
+    }
+    &.style3 {
+      .nft-slide-item {
+        .nft-deadline-wrap {
+          .btn {
+            padding: 12px 18px;
+            order: 2;
+          }
+          .nft-deadline {
+            order: 1;
+            margin-left: 0;
+            margin: 0 0 18px;
+            .countdown {
+              .cdown {
+                margin-right: 5px;
+                padding-right: 5px;
+                span {
+                  font-size: 18px;
+                }
+                p {
+                  font-size: 16px;
+                  position: relative;
+                  top: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.style1,
+    &.style2,
+    &.style3 {
+      .hero-content {
+        h1 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+  //Item Details CSS
+  .item-desc .item-deadline-wrap .item-deadline {
+    width: 100%;
+    margin-left: 0;
+  }
+  .item-desc .item-deadline-wrap .single-item-bid {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  //Slider btn CSS
+  .blog-slider-one,
+  .auction-slider-one,
+  .auction-slider-two {
+    &.owl-carousel {
+      .owl-nav {
+        button {
+          &.owl-prev,
+          &.owl-next {
+            // background-color: rgba(10, 27, 54,0.5);
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+          &.owl-prev {
+            left: -25px;
+          }
+          &.owl-next {
+            right: -25px;
+          }
+        }
+      }
+    }
+  }
+  //Testimonial CSS
+  .testimonial-card {
+    .client-quote {
+      max-width: 65%;
+    }
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .sidebar {
+    margin: 50px 0 0;
+    &.style2 {
+      margin: 0 0 30px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .xl-none {
+    display: none !important;
+  }
+  .content-title {
+    p {
+      padding-right: 25px;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1280px) {
+  .section-img.style2 {
+    right: 10px;
+    max-width: 60px;
+  }
+  .breadcrumb-wrap {
+    .section-img {
+      max-width: 140px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  //Slider btn CSS
+  .blog-slider-one,
+  .auction-slider-one,
+  .auction-slider-two {
+    &.owl-carousel {
+      .owl-nav {
+        button {
+          &.owl-prev,
+          &.owl-next {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+          &.owl-prev {
+            left: -25px;
+          }
+          &.owl-next {
+            right: -25px;
+          }
+        }
+      }
+    }
+  }
+  //Hero CSS
+  .hero-wrap {
+    &.style1,
+    &.style2,
+    &.style3 {
+      .hero-content {
+        h1 {
+          font-size: 64px !important;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .breadcrumb-title,
+  .section-title,
+  .content-title {
+    h2 {
+      font-size: 28px;
+    }
+  }
+  .breadcrumb-wrap {
+    padding: 120px 0 40px;
+  }
+  //Hero CSS
+  .hero-wrap {
+    &.style1 {
+      .hero-img-wrap {
+        .hero-nft-info {
+          left: calc(50% + 25px);
+        }
+      }
+    }
+    &.style2 {
+      .hero-nft-item {
+        .auction-info-wrap {
+          .auction-author-info {
+            .auction-deadline {
+              width: calc(100% - 110px);
+              margin-left: 20px;
+              .countdown {
+                .cdown {
+                  &:after {
+                    top: 45%;
+                    right: -3px;
+                    font-size: 18px;
+                  }
+                  span {
+                    font-size: 22px;
+                  }
+                  p {
+                    font-size: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &.style3 {
+      .nft-slide-item {
+        .nft-deadline-wrap {
+          bottom: 25px;
+          left: 25px;
+          padding: 25px;
+          width: calc(100% - 50px);
+          .btn {
+            padding: 12px 18px;
+          }
+          .nft-deadline {
+            .countdown {
+              .cdown {
+                margin-right: 5px;
+                padding-right: 5px;
+                span {
+                  font-size: 16px;
+                }
+                p {
+                  font-size: 14px;
+                  position: relative;
+                  top: 1px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //Slider btn css
+  .blog-slider-one,
+  .auction-slider-one,
+  .auction-slider-two {
+    &.owl-carousel {
+      .owl-nav {
+        button {
+          &.owl-prev,
+          &.owl-next {
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+          &.owl-prev {
+            left: -25px;
+          }
+          &.owl-next {
+            right: -25px;
+          }
+        }
+      }
+    }
+  }
+  //Auction CSS
+  .item-desc .item-deadline-wrap .item-deadline .countdown .cdown span {
+    font-size: 14px;
+  }
+  //Testimonial CSS
+  .testimonial-card {
+    .client-quote {
+      max-width: 55%;
+    }
+  }
+  //Activity Card CSS
+  .activity-card {
+    .activity-card-info {
+      margin: 0 38px;
+    }
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .btn {
+    padding: 17px 25px 17px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .owl-carousel {
+    .owl-nav {
+      button {
+        &.owl-prev,
+        &.owl-next {
+          width: 60px;
+          height: 60px;
+          i {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    .owl-dots {
+      button {
+        &.owl-dot {
+          span {
+            width: 60px !important;
+            height: 5px !important;
+          }
+          &.active {
+            span {
+              width: 100px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .br-img {
+    min-width: 365px;
+  }
+  //Hero CSS
+  .hero-wrap {
+    &.style2 {
+      padding: 192px 0 100px;
+      .hero-content {
+        p {
+          font-size: 18px;
+          margin-bottom: 32px;
+        }
+      }
+      .hero-nft-item {
+        border: 7px solid $clr_white;
+        padding: 45px 60px 35px;
+        margin-left: 75px;
+      }
+    }
+    &.style3 {
+      padding: 172px 0 110px;
+      .hero-nft-slider {
+        width: calc(100% - 50px);
+        margin-right: auto;
+      }
+    }
+  }
+  .hero-wrap.style1 {
+    padding: 168px 0 104px;
+  }
+  .hero-wrap.style1 .hero-img-wrap .hero-nft-info {
+    width: 440px;
+    left: calc(50% + 45px);
+    padding: 35px 30px;
+  }
+  .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown {
+    margin-right: 15px;
+    padding-left: 15px;
+  }
+  .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-info h6 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline  span {
+    line-height: 43px;
+    margin: 0;
+  }
+  .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown span {
+    font-size: 30px;
+  }
+  .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .btn {
+    padding: 16px 39px;
+  }
+  .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap {
+    background-color: #fff;
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+    padding: 35px;
+    width: calc(100% - 96px);
+    border-radius: 2px;
+  }
+  //Auction Card CSS
+  .auction-card h3 {
+    font-size: 20px;
+  }
+  .auction-card.style4 {
+    padding: 20px 20px 30px;
+  }
+  .auction-card.style5 .auction-info-wrap .auction-author-info {
+    margin-top: 18px;
+  }
+  .auction-card.style3 .auction-info-wrap {
+    padding: 30px 25px;
+  }
+  .auction-card.style6 .auction-info-wrap {
+    padding: 30px 25px 30px;
+  }
+  .auction-slider-two.style2 .auction-card.style5 {
+    padding: 30px;
+  }
+  .auction-card.style3 .auction-info-wrap .auction-author-info .author-info .author-name h6,
+  .auction-card.style4 .auction-info-wrap .auction-author-info .author-info .author-name h6,
+  .auction-card.style6 .auction-info-wrap .auction-author-info .author-info .author-name h6 {
+    margin: 0;
+    line-height: 20px;
+  }
+  .auction-card.style3 .auction-info-wrap .auction-author-info .auction-bid h6,
+  .auction-card.style4 .auction-info-wrap .auction-author-info .auction-bid h6,
+  .auction-card.style6 .auction-info-wrap .auction-author-info .auction-bid h6 {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+  }
+  //Author Card CSS
+  .author-card.style1 {
+    padding: 35px 30px 0;
+  }
+  .author-card.style3 {
+    padding: 35px 30px;
+  }
+  .author-card.style3 .author-card-img .badge {
+    bottom: 0;
+    right: 15px;
+    padding: 0;
+  }
+  .author-card.style4 .author-card-img {
+    width: 90px;
+    height: 90px;
+    margin: -50px auto 22px;
+  }
+  .author-card.style1 .author-card-info,
+  .author-card.style2 .author-card-info,
+  .author-card.style5 .author-card-info,
+  .author-card.style3 .author-card-info,
+  .author-card.style4 .author-card-info {
+    margin: 14px 0 0;
+  }
+  .author-card .author-card-img .badge {
+    bottom: 3px;
+    right: 0;
+  }
+  .author-card.style2 .author-card-img,
+  .author-card.style4 .author-card-img,
+  .author-card.style5 .author-card-img {
+    margin: -75px auto 28px;
+  }
+  .author-details-box .single-author-info {
+    margin-left: 40px;
+  }
+  .seller-card {
+    .seller-img {
+      width: 90px;
+      height: 90px;
+    }
+    .seller-info {
+      width: calc(100% - 110px);
+      margin-left: 20px;
+    }
+  }
+  .seller-card {
+    padding: 30px;
+  }
+  .seller-card .seller-social button {
+    font-size: 17px;
+  }
+  .activity-card .activity-card-img {
+    margin-right: 0;
+  }
+  .activity-card .activity-card-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  //Promo Card CSS
+  .promo-card.style2 .promo-top,
+  .promo-card.style3 .promo-top {
+    padding: 30px 25px 30px;
+  }
+  .promo-card .count-num {
+    right: 25px;
+    font-size: 48px;
+  }
+  //Item Details CSS
+  .item-desc .single-item-author .author-info .author-img {
+    width: 70px;
+    height: 70px;
+  }
+  .item-desc .single-item-author .author-info .author-name {
+    width: calc(100% - 90px);
+  }
+  .item-desc .single-item-author .author-info .author-name h6 {
+    font-weight: 400;
+  }
+  .single-item-img {
+    padding: 48px 0 45px;
+    background: #010028;
+  }
+  //CTA CSS
+  .cta-wrap.style2,
+  .cta-wrap.style3 {
+    padding-left: 85px;
+  }
+  //Blog CSS
+  .blog-card {
+    &.style2 {
+      padding: 30px;
+      .blog-info {
+        .blog-author-info {
+          .btn {
+            &.style1 {
+              padding: 3px 12px;
+              i {
+                font-size: 24px;
+                position: relative;
+                top: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .comment-box-wrap {
+    padding: 55px 50px;
+  }
+  .comment-box-title {
+    h4 {
+      font-size: 24px;
+    }
+  }
+  .contact-item {
+    padding: 35px 30px;
+  }
+  //Card Title CSS
+  .author-card.style1 .author-card-info h3,
+  .author-card.style2 .author-card-info h3,
+  .author-card.style5 .author-card-info h3,
+  .author-card.style3 .author-card-info h3,
+  .author-card.style4 .author-card-info h3,
+  .auction-card h3,
+  .promo-card h3,
+  .activity-card .activity-card-info h3,
+  .seller-card .seller-info h3,
+  .collection-card .collection-info-wrap .collection-info h3,
+  .team-card .team-info h3,
+  .promo-card.style4 .promo-info h3,
+  .auction-card .auction-info-wrap .auction-title h3,
+  .blog-card .blog-info h3 {
+    font-size: 20px;
+  }
+  //Testimonial CSS
+  .testimonial-card {
+    .client-quote {
+      max-width: 58%;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  }
+  //Newsletter CSS
+  .newsletter-wrap .newsletter-form button {
+    padding: 5px 35px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .breadcrumb-title,
+  .section-title,
+  .content-title {
+    h2 {
+      font-size: 45px;
+    }
+  }
+  .breadcrumb-wrap {
+    .container {
+      max-width: 1520px;
+      margin: 0 auto;
+    }
+  }
+  .hero-wrap {
+    .container {
+      max-width: 1540px;
+    }
+    &.style1,
+    &.style2,
+    &.style3 {
+      .hero-content {
+        h1 {
+          font-size: 79px !important;
+          line-height: 100px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 30px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+    &.style3 {
+      .hero-content {
+        h1 {
+          font-size: 79px;
+        }
+        p {
+          max-width: 85%;
+        }
+      }
+    }
+  }
+  //Slider btn CSS
+  .blog-slider-one,
+  .auction-slider-one,
+  .auction-slider-two {
+    &.owl-carousel {
+      .owl-nav {
+        button {
+          &.owl-prev {
+            left: -65px;
+          }
+          &.owl-next {
+            right: -65px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .breadcrumb-wrap,
+  .hero-wrap {
+    .container {
+      max-width: 1660px;
+    }
+  }
+  .blog-slider-one.style2 .owl-nav button.owl-prev,
+  .auction-slider-one.style1 .owl-nav button.owl-prev,
+  .auction-slider-one.style4 .owl-nav button.owl-prev,
+  .auction-slider-two.style2 .owl-nav button.owl-prev,
+  .auction-slider-two.style1 .owl-nav button.owl-prev,
+  .auction-slider-one.style2 .owl-nav button.owl-prev {
+    left: -85px !important;
+  }
+  .blog-slider-one.style2 .owl-nav button.owl-next,
+  .auction-slider-one.style1 .owl-nav button.owl-next,
+  .auction-slider-one.style4 .owl-nav button.owl-next,
+  .auction-slider-two.style1 .owl-nav button.owl-next,
+  .auction-slider-two.style2 .owl-nav button.owl-next,
+  .auction-slider-one.style2 .owl-nav button.owl-next {
+    right: -85px !important;
+  }
+}
