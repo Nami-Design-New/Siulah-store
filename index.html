@@ -19,19 +19,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/dark-theme.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
 </head>
 
 <body>
     <!--Preloader-->
     <div class="preloader js-preloader">
         <img src="assets/img/preloader.gif" alt="Image">
-    </div>
-    <!-- Theme Switcher -->
-    <div class="switch-theme-mode">
-        <label id="switch" class="switch">
-            <input type="checkbox" onchange="toggleTheme()" id="slider">
-            <span class="slider round"></span>
-        </label>
     </div>
     <!-- Page Wrapper -->
     <div class="page-wrapper">
@@ -151,15 +145,15 @@
                             <span data-aos="fade-right">
                                 Game On: Reload Your Fun!
                             </span>
-                            <h1 data-aos="fade-right">
+                            <h1>
                                 Get ready for a gaming experience like no other!
                             </h1>
-                            <p data-aos="fade-right">
+                            <p>
                                 Get game recharge cards for top titles like PUBG, Free Fire, PlayStation, and more. Shop
                                 effortlessly, quickly top up your gaming credit, explore exclusive offers, and dive into
                                 gaming excitement today!
                             </p>
-                            <div class="hero-btn" data-aos="fade-right">
+                            <div class="hero-btn">
                                 <a href="explore-products.html" class="btn style1">
                                     Shop Now
                                     <i class="flaticon-right-arrow-1"></i>
@@ -170,19 +164,132 @@
                     <div class="col-lg-6 order-lg-2 order-md-1 order-1">
                         <div class="hero-img-wrap">
                             <img src="assets/img/hero/hero-shape-5.png" alt="Image" class="hero-shape-one">
-                            <img class="bounce" src="assets/img/herobg.png" alt="Image">
+                            <img style="object-fit: contain;width: 70%;" src="assets/img/herobg.png" alt="Image">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Auction Section Start -->
+        <!-- hero swiper -->
+        <section class="hero_swiper bg-zodiac">
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/slides/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slides/2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slides/3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slides/4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/slides/5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- categories -->
+        <div class="categories bg-pearl">
+            <div class="container">
+                <div class="row mb-40 align-items-end">
+                    <div class="col-md-8">
+                        <div class="section-title style2">
+                            <h2>Categories</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-md-end sm-none">
+                        <a href="explore-products.html" class="btn style1">
+                            View All<i class="flaticon-right-arrow-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="200">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/1.png" alt="">
+                            </div>
+                            <p class="org-color">Play Station</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="300">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/2.png" alt="">
+                            </div>
+                            <p class="org-color">iTunes</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="400">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/3.png" alt="">
+                            </div>
+                            <p class="org-color">Google Play</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="500">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/9.png" alt="">
+                            </div>
+                            <p class="org-color">Online games</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="600">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/5.png" alt="">
+                            </div>
+                            <p class="org-color">Shopping cards</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="700">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/6.png" alt="">
+                            </div>
+                            <p class="org-color">entertainment</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="800">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/6.svg" alt="">
+                            </div>
+                            <p class="org-color">Internet Calling Cards</p>
+                        </a>
+                    </div>
+                    <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 mb-2" data-aos="fade-up" data-aos-duration="1200"
+                        data-aos-delay="900">
+                        <a href="#!">
+                            <div class="seller-card style3">
+                                <img src="assets/img/categories/8.png" alt="">
+                            </div>
+                            <p class="org-color">PC Mac Games</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cards -->
         <section class="auction-wrap ptb-100 bg-zodiac">
             <div class="container">
                 <div class="row mb-40 align-items-end">
                     <div class="col-md-8">
                         <div class="section-title style2">
-                            <h2>Offers of the Day</h2>
+                            <h2>Cards</h2>
                         </div>
                     </div>
                     <div class="col-md-4 text-md-end sm-none">
@@ -208,8 +315,8 @@
                             </div>
                             <div class="price">
                                 <div class="p">
-                                    <h6><span>360</span> SAR</h6>
-                                    <small><span>375</span> SAR</small>
+                                    <h6><span>12</span> - <span>780</span> <i>SAR</i></h6>
+                                    <!-- <small><span>375</span> SAR</small> -->
                                 </div>
                                 <button class="buy btn">
                                     <i class="ri-shopping-cart-2-line"></i>
@@ -233,8 +340,8 @@
                             </div>
                             <div class="price">
                                 <div class="p">
-                                    <h6><span>6000</span> SAR</h6>
-                                    <small><span>4550</span> SAR</small>
+                                    <h6><span>150</span> - <span>400</span> <i>SAR</i></h6>
+                                    <!-- <small><span>4550</span> SAR</small> -->
                                 </div>
                                 <button class="buy btn">
                                     <i class="ri-shopping-cart-2-line"></i>
@@ -242,1174 +349,371 @@
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-18.jpg" alt="Image">
+                            <img src="assets/img/babyshop.jpeg" alt="Image">
                         </div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Walking On Air</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-10.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Harold Tyler</a></h6>
-                                        <a href="author-profile.html">@harold</a>
-                                    </div>
-                                </div>
-                                <div class="auction-bid">
-                                    <h6>1.23ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">
+                                    Babyshop GiftCard 100 SAR (KSA Store)
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>17+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    Babyshop GiftCards - KSA store
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>5</span> - <span>86</span> <i>SAR</i></h6>
+                                    <!-- <small><span>4550</span> SAR</small> -->
+                                </div>
+                                <button class="buy btn">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-19.jpg" alt="Image">
+                            <img src="assets/img/ludo.webp" alt="Image">
                         </div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Exe Dream Light</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-1.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Lane Bourn</a></h6>
-                                        <a href="author-profile.html">@bourn</a>
-                                    </div>
-                                </div>
-                                <div class="auction-bid">
-                                    <h6>0.56ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">
+                                    Yalla Ludo - 100 $ Diamonds + STC TV Classic 12 Months Free
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>22+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    Bundles deals
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>40</span> - <span>280</span> <i>SAR</i></h6>
+                                    <!-- <small><span>675</span> SAR</small> -->
+                                </div>
+                                <button class="buy btn">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-20.jpg" alt="Image">
+                            <img src="assets/img/i-tunes_10.jpg" alt="Image">
                         </div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Etharum On Diamond</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-7.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Les Carter</a></h6>
-                                        <a href="author-profile.html">@carter</a>
-                                    </div>
-                                </div>
-                                <div class="auction-bid">
-                                    <h6>1.45ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">
+                                    Apple & iTunes Giftcard $10 (US Store)
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>16+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    iTunes Gift Cards US Store
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>1400</span> - <span>7800</span> <i>SAR</i></h6>
+                                    <!-- <small><span>675</span> SAR</small> -->
+                                </div>
+                                <button class="buy btn">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="700">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-21.jpg" alt="Image">
+                            <img src="assets/img/nana.jpg" alt="Image">
                         </div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Super Neumorphism</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-3.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Willium David</a></h6>
-                                        <a href="author-profile.html">@david</a>
-                                    </div>
-                                </div>
-                                <div class="auction-bid">
-                                    <h6>2.43ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">
+                                    Nana Customers GiftCard - SR100
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>21+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    Nana Customers GiftCards
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>30</span> - <span>480</span> <i>SAR</i></h6>
+                                    <!-- <small><span>675</span> SAR</small> -->
+                                </div>
+                                <button class="buy btn">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Auction Section End -->
-
-        <!-- Author Section Start -->
-        <section class="author-wrap bg-pearl ptb-100">
+        <!-- Sales offers -->
+        <section class="auction-wrap ptb-100 bg-pearl">
             <div class="container">
                 <div class="row mb-40 align-items-end">
                     <div class="col-md-8">
                         <div class="section-title style2">
-                            <span>Top Sellers</span>
-                            <h2>Top Sellers Of The Month</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="author-slider-one owl-carousel">
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-1.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Eleanor Pena</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">748.75ETH</p>
-                        </div>
-                    </div>
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-3.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Brad Hodge</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">548.12ETH</p>
-                        </div>
-                    </div>
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-2.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Emily Grace</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">576.75ETH</p>
-                        </div>
-                    </div>
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="500">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-4.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Diana Harold</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">435.65ETH</p>
-                        </div>
-                    </div>
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="600">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-5.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Steve Austin</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">578.43ETH</p>
-                        </div>
-                    </div>
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="700">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-6.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Ema Cooper</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">234.12ETH</p>
-                        </div>
-                    </div>
-                    <div class="author-card style1" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="800">
-                        <div class="author-card-img">
-                            <img src="assets/img/author/author-7.jpg" alt="Image">
-                            <span class="badge"><img src="assets/img/badge-2.png" alt="Image"></span>
-                        </div>
-                        <div class="author-card-info">
-                            <h3><a href="author-profile.html">Brad Hoff</a></h3>
-                            <p><img src="assets/img/up-arrow.png" alt="Image">322.15ETH</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Author Section End -->
-
-        <!-- Live Auction Setion Start -->
-        <section class="auction-wrap ptb-100 bg-zodiac">
-            <div class="container">
-                <div class="row mb-40 align-items-end">
-                    <div class="col-md-8">
-                        <div class="section-title style2">
-                            <span>NFT's On Auction</span>
-                            <h2>Live Auction</h2>
+                            <h2>Sales offers</h2>
                         </div>
                     </div>
                     <div class="col-md-4 text-md-end sm-none">
-                        <a href="explore-products.html" class="btn style6">Explore All<i
-                                class="flaticon-right-arrow-1"></i></a>
+                        <a href="explore-products.html" class="btn style1">
+                            Explore All<i class="flaticon-right-arrow-1"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="auction-slider-two style1 owl-carousel">
-                    <div class="auction-card style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                <div class="auction-slider-one style1 owl-carousel">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-10.jpg" alt="Image">
+                            <img src="assets/img/pubgcard.png" alt="Image">
                         </div>
-                        <div class="countdown text-center" data-countdown="2021/12/11"></div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Hamlet Contemplates</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-1.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Thora Jenkins</a></h6>
-                                        <a href="author-profile.html">@Jenkins</a>
-                                    </div>
-                                </div>
-                                <div class="auction-item-stat">
-                                    <h6>3.66 ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">Pubg Mobile 600+ Free 60 UC</a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>24+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    PUBG
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>80</span> <i>SAR</i></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-11.jpg" alt="Image">
+                            <img src="assets/img/playstation.jpg" alt="Image">
                         </div>
-                        <div class="countdown text-center" data-countdown="2023/11/11"></div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Abstract Painting</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-2.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Angie Plasty</a></h6>
-                                        <a href="author-profile.html">@plasty</a>
-                                    </div>
-                                </div>
-                                <div class="auction-item-stat">
-                                    <h6>4.46 ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">PlayStation UK Store GBP35</a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>13+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    PlayStation Store UK
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>270</span> <i>SAR</i></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-12.jpg" alt="Image">
+                            <img src="assets/img/babyshop.jpeg" alt="Image">
                         </div>
-                        <div class="countdown text-center" data-countdown="2023/10/11"></div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Dark-Light Angel</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-3.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Lucas Adison</a></h6>
-                                        <a href="author-profile.html">@adison</a>
-                                    </div>
-                                </div>
-                                <div class="auction-item-stat">
-                                    <h6>2.43 ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">
+                                    Babyshop GiftCard
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>20+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    Babyshop GiftCards - KSA store
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>86</span> <i>SAR</i></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-13.jpg" alt="Image">
+                            <img src="assets/img/ludo.webp" alt="Image">
                         </div>
-                        <div class="countdown text-center" data-countdown="2023/9/11"></div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">To Infinity &amp; Beyond</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-4.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Neville Jones</a></h6>
-                                        <a href="author-profile.html">@neville</a>
-                                    </div>
-                                </div>
-                                <div class="auction-item-stat">
-                                    <h6>1.34 ETH</h6>
-                                    <span>Current Bid</span>
-                                </div>
-                            </div>
+                            <h3>
+                                <a href="item-details.html">
+                                    Yalla Ludo - 100 Diamonds + STC TV Classic 12 Months Free
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>18+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    Bundles deals
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>280</span> <i>SAR</i></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="auction-card style2" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="auction-img">
-                            <img src="assets/img/nft/nft-14.jpg" alt="Image">
+                            <img src="assets/img/i-tunes_10.jpg" alt="Image">
                         </div>
-                        <div class="countdown text-center" data-countdown="2023/10/10"></div>
                         <div class="auction-info-wrap">
-                            <h3><a href="item-details.html">Modern 3D Art</a></h3>
-                            <div class="auction-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-5.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Luke Ogley</a></h6>
-                                        <a href="author-profile.html">@Ogley</a>
-                                    </div>
-                                </div>
-                                <div class="auction-item-stat">
-                                    <h6>1.56 ETH</h6>
-                                    <span>Current Bid</span>
+                            <h3>
+                                <a href="item-details.html">
+                                    Apple & iTunes Giftcard $10 (US Store)
+                                </a>
+                            </h3>
+                            <div class="auction-stock">
+                                <a href="#!">
+                                    iTunes Gift Cards US Store
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>4000</span> <i>SAR</i></h6>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- slide -->
+                    <div class="auction-card style1" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                        <div class="auction-img">
+                            <img src="assets/img/nana.jpg" alt="Image">
+                        </div>
+                        <div class="auction-info-wrap">
+                            <h3>
+                                <a href="item-details.html">
+                                    Nana Customers GiftCard - SR100
+                                </a>
+                            </h3>
                             <div class="auction-stock">
-                                <p>15+ Place Bid</p>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
+                                <a href="#!">
+                                    Nana Customers GiftCards
+                                </a>
+                            </div>
+                            <div class="price">
+                                <div class="p">
+                                    <h6><span>180</span> <i>SAR</i></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Live Auction Setion End -->
-
-        <!-- CTA Section Start -->
-        <section class="cta-wrap">
-            <img src="assets/img/cta-shape-1.png" alt="Image" class="cta-shape">
+        <!-- download app -->
+        <section class="cta-wrap ">
             <div class="container">
                 <div class="row align-items-end" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                     <div class="col-lg-6">
-                        <div class="cta-content ptb-100">
+                        <div class="cta-content ptb-50">
                             <div class="content-title style2">
-                                <span>Upload NFT</span>
-                                <h2>NFT Marketplace Explore Collect, & Sell NFTs</h2>
+                                <span>Unlock Fun at Your Fingertips!</span>
+                                <p>
+                                    Download our app now for instant access to your favorite games. Simplify your gaming
+                                    experience, enjoy exclusive perks, and stay connected to the world of entertainment.
+                                    Start the adventure – download now!
+                                </p>
+                                <div class="download_btns">
+                                    <a href="#!">
+                                        <img src="assets/img/app-store.svg" alt="">
+                                    </a>
+                                    <a href="#!">
+                                        <img src="assets/img/google-play.svg" alt="">
+                                    </a>
+                                </div>
                             </div>
-                            <a href="create-collection.html" class="btn style6">Upload Item<i
-                                    class="flaticon-right-arrow-1"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
                         <div class="cta-img-wrap">
-                            <img src="assets/img/cta-1.png" alt="Image">
+                            <img style="height: 360px;" src="assets/img/mockup.png" alt="Image">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- CTA Section End -->
-
-        <!-- NFT Item Section Start -->
-        <section class="nft-wrap ptb-100 bg-zodiac">
-            <div class="container">
-                <div class="row mb-40 align-items-end">
-                    <div class="col-md-8">
-                        <div class="section-title style2">
-                            <span>Collection</span>
-                            <h2>Explore NFT Product</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-md-end sm-none">
-                        <a href="explore-products.html" class="btn style1">Explore All<i
-                                class="flaticon-right-arrow-1"></i></a>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="200">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-1.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>1.3k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Fly Higher Space</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-13.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Tom Hanks</a></h6>
-                                            <a href="author-profile.html">@hanks</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>0.668ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="300">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-2.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>2.3k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Dodge The Braink</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-6.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Angela Plasty</a></h6>
-                                            <a href="author-profile.html">@angela</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>0.254ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="400">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-3.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>1.4k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Les Immoratals</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-4.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Amelia Rose</a></h6>
-                                            <a href="author-profile.html">@amelia</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>1.068ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="500">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-4.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>2.2k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Modern Revolution</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-1.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Orson Carte</a></h6>
-                                            <a href="author-profile.html">@orson</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>2.68ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="600">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-5.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>1.4k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">3D Triangle Art</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-3.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">James Parker</a></h6>
-                                            <a href="author-profile.html">@parket</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>1.228ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="700">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-6.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>1.6k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Blue Angle</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-5.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Thomas Eddi</a></h6>
-                                            <a href="author-profile.html">@thomas</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>2.068ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="800">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-7.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>1.1k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Diamond Art</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-12.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Jack Sparrow</a></h6>
-                                            <a href="author-profile.html">@Sparrow</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>0.068ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="900">
-                        <div class="auction-card style3">
-                            <div class="auction-img">
-                                <img src="assets/img/nft/nft-8.jpg" alt="Image">
-                                <span class="item-popularity"><i class="ri-heart-fill"></i>1.5k</span>
-                                <a href="place-bid.html" class="btn style1">Place Bid <i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                            <div class="auction-info-wrap">
-                                <h3><a href="item-details.html">Icecube Immoratals</a></h3>
-                                <div class="auction-author-info">
-                                    <div class="author-info">
-                                        <div class="author-img">
-                                            <img src="assets/img/author/author-8.jpg" alt="Image">
-                                            <span class="badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                        </div>
-                                        <div class="author-name">
-                                            <h6><a href="author-profile.html">Olivia Jen</a></h6>
-                                            <a href="author-profile.html">@olivia</a>
-                                        </div>
-                                    </div>
-                                    <div class="auction-bid">
-                                        <h6>0.468ETH</h6>
-                                        <span>Current Bid</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-20">
-                    <a href="index.html" class="btn style4">Load More<i class="ri-refresh-line"></i></a>
-                </div>
-            </div>
-        </section>
-        <!-- NFT Item Section End -->
-
         <!-- Promo Section Start -->
         <section class="promo-wrap pt-100 pb-75 bg-pearl">
             <div class="container">
                 <div class="section-title style2 text-center mb-40">
-                    <span>Create &amp; Sell</span>
-                    <h2>Create &amp; Sell Your NFT's</h2>
+                    <span>Game On Now</span>
+                    <h2>Seamless, Instant, Exclusive</h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1200"
-                        data-aos-delay="200">
+                    <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                         <div class="promo-card style1">
                             <span class="count-num">01</span>
                             <div class="promo-icon">
-                                <img src="assets/img/icon-1.png" alt="Image">
+                                <img src="assets/img/lightning.png" alt="Image">
                             </div>
                             <div class="promo-info">
-                                <h3>Set Up Your Wallet</h3>
-                                <p>Eget nulla pha sellus odio sit portti ena tib aliquam blandit gravida ulcies eleifend
-                                    varius tempo solo.</p>
+                                <h3>Instant Reloads</h3>
+                                <p>
+                                    Top up your gaming credit in seconds for uninterrupted playtime.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1200"
-                        data-aos-delay="300">
+                    <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
                         <div class="promo-card style1">
                             <span class="count-num">02</span>
                             <div class="promo-icon">
-                                <img src="assets/img/icon-2.png" alt="Image">
+                                <img src="assets/img/game-controller.webp" alt="Image">
                             </div>
                             <div class="promo-info">
-                                <h3>Create Collection</h3>
-                                <p>Eget nulla pha sellus odio sit portti ena tib aliquam blandit gravida ulcies eleifend
-                                    varius tempo solo.</p>
+                                <h3>Wide Selection</h3>
+                                <p>
+                                    Choose from a variety of game recharge cards for your favorite titles.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1200"
-                        data-aos-delay="400">
+                    <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                         <div class="promo-card style1">
                             <span class="count-num">03</span>
                             <div class="promo-icon">
-                                <img src="assets/img/icon-3.png" alt="Image">
+                                <img src="assets/img/star.png" alt="Image">
                             </div>
                             <div class="promo-info">
-                                <h3>Add Your NTFs</h3>
-                                <p>Eget nulla pha sellus odio sit portti ena tib aliquam blandit gravida ulcies eleifend
-                                    varius tempo solo.</p>
+                                <h3>Exclusive Offers</h3>
+                                <p>
+                                    Unlock special deals and exclusive discounts on gaming credits.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1200"
-                        data-aos-delay="500">
+                    <div class="col-lg-3 col-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
                         <div class="promo-card style1">
                             <span class="count-num">04</span>
                             <div class="promo-icon">
-                                <img src="assets/img/icon-4.png" alt="Image">
+                                <img src="assets/img/clock.png" alt="Image">
                             </div>
                             <div class="promo-info">
-                                <h3>List Item for Sale</h3>
-                                <p>Eget nulla pha sellus odio sit portti ena tib aliquam blandit gravida ulcies eleifend
-                                    varius tempo solo.</p>
+                                <h3>24/7 Support</h3>
+                                <p>
+                                    Our customer support is ready around the clock to assist you. Game with confidence!
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Promo Section End -->
-
-        <!-- Author Section Start -->
-        <section class="author-wrap pt-100 pb-75 bg-zodiac">
-            <div class="container">
-                <div class="section-title style2 text-center mb-40">
-                    <span>Top Authors</span>
-                    <h2>Our Amazing Authors</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="200">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-1.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Alexa Lilly</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">748.756ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="300">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-2.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Chole Grace</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">123.032ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="400">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-3.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Tom Hanks</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">234.132ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="500">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-8.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Kay Ford</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">323.564ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="600">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-6.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Faye Todd</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">213.232ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="700">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-5.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Ellery Rome</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">356.332ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="800">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-4.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Angelina Jos</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">433.215ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-3 col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200"
-                        data-aos-delay="900">
-                        <div class="seller-card style3">
-                            <div class="seller-info-wrap">
-                                <div class="seller-img">
-                                    <img src="assets/img/author/author-13.jpg" alt="Image">
-                                    <span class="seller-badge"><img src="assets/img/badge.png" alt="Image"></span>
-                                </div>
-                                <div class="seller-info">
-                                    <h3><a href="author-profile.html">Mark henry</a></h3>
-                                    <p><img src="assets/img/up-arrow.png" alt="Image">256.612ETH</p>
-                                </div>
-                            </div>
-                            <div class="seller-social">
-                                <button type="button">Follow <i class="flaticon-right-arrow-1"></i></button>
-                                <ul class="social-profile style1 list-style">
-                                    <li>
-                                        <a target="_blank" href="https://facebook.com">
-                                            <i class="ri-facebook-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://twitter.com">
-                                            <i class="ri-twitter-fill"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href="https://instagram.com">
-                                            <i class="ri-instagram-line"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Author Section End -->
-
-        <!-- Blog Section Start -->
-        <section class="blog-wrap ptb-100 bg-pearl">
-            <div class="container">
-                <div class="row align-items-end">
-                    <div class="col-md-8">
-                        <div class="section-title style2 mb-40">
-                            <span>Blog &amp; News</span>
-                            <h2>Latest Blog &amp; News</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-md-end mb-40 sm-none">
-                        <a href="blog-left-sidebar.html" class="btn style6">Explore All<i
-                                class="flaticon-right-arrow-1"></i></a>
-                    </div>
-                </div>
-                <div class="blog-slider-one style2 owl-carousel">
-                    <div class="blog-card style1">
-                        <div class="blog-img">
-                            <img src="assets/img/blog/blog-1.jpg" alt="Image">
-                            <a href="posts-by-date.html" class="blog-date"><i class="ri-calendar-todo-line"></i>July 25,
-                                2022</a>
-                        </div>
-                        <div class="blog-info">
-                            <h3><a href="blog-details-right-sidebar.html">A NFT Portrait Of The Year That Changed
-                                    Everything</a></h3>
-                            <p>Mollis pellen tesque pellen tesque feugiat risus ut amet nunc. Volutpat nam convais.</p>
-                            <div class="blog-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-1.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Sandra Fox</a></h6>
-                                        <a href="author-profile.html">@sandra</a>
-                                    </div>
-                                </div>
-                                <a href="blog-details-right-sidebar.html" class="btn style1"><i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="blog-card style1">
-                        <div class="blog-img">
-                            <img src="assets/img/blog/blog-2.jpg" alt="Image">
-                            <a href="posts-by-date.html" class="blog-date"><i class="ri-calendar-todo-line"></i>July 13,
-                                2022</a>
-                        </div>
-                        <div class="blog-info">
-                            <h3><a href="blog-details-right-sidebar.html">Digital Artists are Growing Faster In 2022</a>
-                            </h3>
-                            <p>Mollis pellen tesque pellen tesque feugiat risus ut amet nunc. Volutpat nam convais.</p>
-                            <div class="blog-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-2.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Holly Caldwell</a></h6>
-                                        <a href="author-profile.html">@caldwell</a>
-                                    </div>
-                                </div>
-                                <a href="blog-details-right-sidebar.html" class="btn style1"><i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="blog-card style1">
-                        <div class="blog-img">
-                            <img src="assets/img/blog/blog-3.jpg" alt="Image">
-                            <a href="posts-by-date.html" class="blog-date"><i class="ri-calendar-todo-line"></i>June 23,
-                                2022</a>
-                        </div>
-                        <div class="blog-info">
-                            <h3><a href="blog-details-right-sidebar.html">NFT Assests Selling Marketplace In
-                                    Australia</a></h3>
-                            <p>Mollis pellen tesque pellen tesque feugiat risus ut amet nunc. Volutpat nam convais.</p>
-                            <div class="blog-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-3.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Colin Perkins</a></h6>
-                                        <a href="author-profile.html">@perkins</a>
-                                    </div>
-                                </div>
-                                <a href="blog-details-right-sidebar.html" class="btn style1"><i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog-card style1">
-                        <div class="blog-img">
-                            <img src="assets/img/blog/blog-4.jpg" alt="Image">
-                            <a href="posts-by-date.html" class="blog-date"><i class="ri-calendar-todo-line"></i>June 11,
-                                2022</a>
-                        </div>
-                        <div class="blog-info">
-                            <h3><a href="blog-details-right-sidebar.html">The Biggest Drop In Times Square Since New
-                                    Years Eve</a></h3>
-                            <p>Mollis pellen tesque pellen tesque feugiat risus ut amet nunc. Volutpat nam convais.</p>
-                            <div class="blog-author-info">
-                                <div class="author-info">
-                                    <div class="author-img">
-                                        <img src="assets/img/author/author-4.jpg" alt="Image">
-                                    </div>
-                                    <div class="author-name">
-                                        <h6><a href="author-profile.html">Helen Grant</a></h6>
-                                        <a href="author-profile.html">@helen</a>
-                                    </div>
-                                </div>
-                                <a href="blog-details-right-sidebar.html" class="btn style1"><i
-                                        class="flaticon-right-arrow-1"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Blog Section End -->
-
-        <!-- Newsletter Section Start -->
-        <section class="newsletter-wrap ptb-100">
-            <img src="assets/img/newsletter-bg.png" alt="Image" class="newsletter-shape-one">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
-                        <div class="content-title style2">
-                            <span>Subscribe To Newsletter</span>
-                            <h2>Want To Get Notify On Product Updates?</h2>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
-                        <form action="#" class="newsletter-form">
-                            <input type="email" placeholder="Enter Your Email Address">
-                            <button type="submit">Subscribe Now <i class="ri-send-plane-fill"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Newsletter Section End -->
-
         <!-- Footer Section Start -->
-        <footer class="footer-wrap bg-f pt-100 ">
+        <footer class="footer-wrap bg-pearl pt-100 ">
             <img src="assets/img/footer-shape-1.png" alt="Image" class="footer-shape-one animationFramesTwo">
             <img src="assets/img/footer-shape-2.png" alt="Image" class="footer-shape-two bounce">
             <div class="container">
@@ -1417,12 +721,11 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-lg-5">
                         <div class="footer-widget">
                             <a href="index.html" class="footer-logo">
-                                <img src="assets/img/logo-white.png" alt="Image">
+                                <img src="assets/img/logo-white.svg" alt="Image">
                             </a>
                             <p class="comp-desc">
-                                Duis cursus, mi quis viverra ornare, eros dolor nulla utimp erdiet commodo. Mollis
-                                petesque pellen his tesque feu giat risus ut amet volutpat nam convallis urna
-                                sollicitudin nunc opellen tesque pellen tesque feugiat risus.
+                                Your one-stop gaming destination for instant recharges, exclusive offers, and 24/7
+                                support. Elevate your gaming experience with us. Game on!
                             </p>
                             <ul class="social-profile style1 list-style">
                                 <li>
@@ -1562,18 +865,11 @@
                     </div>
                 </div>
             </div>
-            <p class="copyright-text"><i class="ri-copyright-line"></i> <span>Anfi</span>. All Rights Reserved By <a
-                    href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+            <p class="copyright-text">© All rights reserved to <span>Siulah</span> 2023</p>
         </footer>
-        <!-- Footer Section End -->
-
     </div>
-    <!-- Page Wrapper End -->
-
     <!-- Back-to-top button Start -->
     <a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
-    <!-- Back-to-top button End -->
-
     <!-- Link of JS files -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -1586,6 +882,33 @@
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/tweenmax.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper(".heroSwiper", {
+            loop: true,
+            spaceBetween: 16,
+            speed: 2000,
+            centeredSlides: true,
+            pagination: {
+                el: ".testimonialsSwiperPagination",
+                clickable: true
+            },
+            autoplay: {
+                delay: 1000
+            },
+            breakpoints: {
+                992: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 1
+                },
+                350: {
+                    slidesPerView: 1
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

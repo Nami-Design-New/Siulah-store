@@ -1745,8 +1745,8 @@
     max-width: 1540px;
   }
   .hero-wrap.style1 .hero-content h1, .hero-wrap.style2 .hero-content h1, .hero-wrap.style3 .hero-content h1 {
-    font-size: 79px !important;
-    line-height: 100px;
+    font-size: 56px !important;
+    line-height: 72px;
   }
   .hero-wrap.style1 .hero-content p, .hero-wrap.style2 .hero-content p, .hero-wrap.style3 .hero-content p {
     font-size: 18px;

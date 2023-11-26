@@ -297,7 +297,15 @@
     });
 
     // Scroll animation
-    AOS.init();
+    AOS.init(
+        {
+            offset: 20,
+            delay: 50,
+            duration: 500,
+            easing: "linear",
+            once: true
+        }
+    );
 
     //Back To top
     function BackToTop() {
