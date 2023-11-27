@@ -295,7 +295,12 @@
             $this.toggleClass('menu-open');
         }
     });
-
+    $(".animate_section").each(function () {
+        const sectionDivs = $(this).find("[data-aos]");
+        sectionDivs.each(function (index) {
+            $(this).attr("data-aos-delay", (index + 1) * 100);
+        });
+    });
     // Scroll animation
     AOS.init(
         {
@@ -357,20 +362,20 @@ function toggleTheme() {
     }
 })();
 
-$(document).ready(function () {
-    //aos Delay
-    $(".animate_section").each(function () {
-        const sectionDivs = $(this).find("[data-aos]");
-        sectionDivs.each(function (index) {
-            $(this).attr("data-aos-delay", (index + 1) * 100);
-        });
-    });
-    // aos
-    AOS.init({
-        offset: 20,
-        delay: 50,
-        duration: 500,
-        easing: "linear",
-        once: true
-    });
-});
+// $(document).ready(function () {
+//     //aos Delay
+//     $(".animate_section").each(function () {
+//         const sectionDivs = $(this).find("[data-aos]");
+//         sectionDivs.each(function (index) {
+//             $(this).attr("data-aos-delay", (index + 1) * 100);
+//         });
+//     });
+//     // aos
+//     AOS.init({
+//         offset: 20,
+//         delay: 50,
+//         duration: 500,
+//         easing: "linear",
+//         once: true
+//     });
+// });

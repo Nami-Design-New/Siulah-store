@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,7 +42,7 @@
                         </div>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item has-child">
-                                <a href="index.html" class="nav-link ">
+                                <a href="index.html" class="nav-link active">
                                     Home
                                 </a>
                             </li>
@@ -93,7 +93,7 @@
                                 <a href="" class="nav-link">Gifts & offers</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link active">Contact Us</a>
+                                <a href="contact.html" class="nav-link">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -145,11 +145,10 @@
                 <div class="row align-items-center">
                     <div class="col-sm-6">
                         <div class="breadcrumb-title">
-                            <!-- <h2>Login</h2> -->
-                            <h2>Contact Us</h2>
+                            <h2>Create an account..</h2>
                             <ul class="breadcrumb-menu list-style">
                                 <li><a href="index.html">Home </a></li>
-                                <li>Contact Us</li>
+                                <li>Confirm email</li>
                             </ul>
                         </div>
                     </div>
@@ -163,58 +162,47 @@
             </div>
         </div>
         <!-- Account Section start -->
-        <section class="Login-wrap ptb-50 bg-zodiac">
+        <section class="Login-wrap ptb-100 bg-zodiac">
             <div class="container">
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="login-form-wrap">
+                    <div class="col-lg-8">
+                        <div class="login-form-wrap" style="margin-top: -180px;">
+                            <div class="login-header">
+                            </div>
                             <div class="login-form">
                                 <div class="login-body">
-                                    <form class="form-wrap" action="#">
+                                    <form class="form-wrap" action="sign-up.html">
                                         <div class="row">
                                             <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label for="name">
-                                                        <i class="ri-user-line"></i>
-                                                        Name
-                                                    </label>
-                                                    <input id="name" name="name" type="text" placeholder="John doe">
-                                                </div>
+                                                <p class="text-center">Please enter the verification code sent to the
+                                                    email gmail@mail.com</p>
                                             </div>
                                             <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label for="email">
-                                                        <i class="ri-at-line"></i>
-                                                        Email Address
-                                                    </label>
-                                                    <input id="email" name="email" type="email"
-                                                        placeholder="Example: mail@mail.com">
+                                                <div class="otp-container">
+                                                    <input class="otp-input" type="text" maxlength="1"
+                                                        inputmode="numeric" pattern="[0-9]" required id="finput">
+                                                    <input class="otp-input" type="text" maxlength="1"
+                                                        inputmode="numeric" pattern="[0-9]" required>
+                                                    <input class="otp-input" type="text" maxlength="1"
+                                                        inputmode="numeric" pattern="[0-9]" required>
+                                                    <input class="otp-input" type="text" maxlength="1"
+                                                        inputmode="numeric" pattern="[0-9]" required>
+                                                    <input class="otp-input" type="text" maxlength="1"
+                                                        inputmode="numeric" pattern="[0-9]" required>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label for="subject">
-                                                        <i class="ri-message-2-line"></i>
-                                                        Subject
-                                                    </label>
-                                                    <input id="subject" name="subject" type="text"
-                                                        placeholder="message subject">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <label for="message">
-                                                        <i class="ri-chat-3-line"></i>
-                                                        Message
-                                                    </label>
-                                                    <textarea name="message" id="message"
-                                                        placeholder="your message"></textarea>
+                                            <div class="col-12 mb-25">
+                                                <div class="resend_code">
+                                                    <a href="#">Resend the code</a>
+                                                    <div class="timer">
+                                                        <span>00:48</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-12">
                                                 <div class="form-group mb-0">
-                                                    <button class="btn style1 w-100 d-block">
-                                                        Send
+                                                    <button class="btn style1">
+                                                        Confirm
                                                     </button>
                                                 </div>
                                             </div>
@@ -362,6 +350,29 @@
     <script src="assets/js/tweenmax.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script>
+        const otpContainer = document.querySelector('.otp-container');
+        const firstInput = document.getElementById("finput").focus();
+        otpContainer.addEventListener('input', (event) => {
+            const currentInput = event.target;
+            const nextInput = currentInput.nextElementSibling;
+            const prevInput = currentInput.previousElementSibling;
+            if (currentInput.value && nextInput) {
+                nextInput.focus();
+            } else if (!currentInput.value && prevInput) {
+                prevInput.focus();
+            }
+        });
+        otpContainer.addEventListener('keydown', (event) => {
+            if (event.key === 'Backspace') {
+                const currentInput = event.target;
+                const prevInput = currentInput.previousElementSibling;
+                if (!currentInput.value && prevInput) {
+                    prevInput.focus();
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -1831,7 +1831,7 @@ select {
 }
 .breadcrumb-wrap .br-shape {
   position: absolute;
-  top: 52%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
@@ -1948,46 +1948,79 @@ select {
 }
 
 .login-form-wrap {
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.1);
+  padding: 48px 32px;
+  background: #23324a;
   margin-bottom: 25px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 9;
+  margin-top: -140px;
+  box-shadow: rgba(6, 17, 36, 0.2) 0px 2px 8px 0px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(21, 30, 47, 0.75);
+}
+@media (max-width: 768px) {
+  .login-form-wrap {
+    margin-top: -120px !important;
+  }
+}
+@media (max-width: 576px) {
+  .login-form-wrap {
+    margin-top: 0 !important;
+  }
 }
 .login-form-wrap .login-header h3 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 400;
   line-height: 1;
-  margin-bottom: 35px;
-  color: #fff;
+  margin-bottom: 12px;
+  color: #ef7822;
   text-align: center;
 }
 .login-form-wrap .login-header span {
   color: rgba(255, 255, 255, 0.75);
+}
+.login-form-wrap .login-header p {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #f8f8f8;
 }
 .login-form-wrap .login-body .form-group {
   margin: 0 0 20px;
 }
 .login-form-wrap .login-body .form-group label {
   font-size: 16px;
-  color: #666666;
+  color: #f8f8f8;
   margin: 0 0 10px;
   display: block;
 }
-.login-form-wrap .login-body .form-group input {
+.login-form-wrap .login-body .form-group label i {
+  color: #ef7822;
+}
+.login-form-wrap .login-body .form-group input,
+.login-form-wrap .login-body .form-group textarea {
   border-radius: 5px;
-  background: #051124;
+  background: #08162c;
   border: none;
   width: 100%;
   color: #fff;
   height: 60px;
   padding: 15px 20px;
+  font-size: 14px;
 }
-.login-form-wrap .login-body .form-group input::-moz-placeholder {
-  color: #fff;
+.login-form-wrap .login-body .form-group input::-moz-placeholder, .login-form-wrap .login-body .form-group textarea::-moz-placeholder {
+  color: #f9fafc;
   opacity: 0.9;
 }
-.login-form-wrap .login-body .form-group input::placeholder {
-  color: #fff;
+.login-form-wrap .login-body .form-group input::placeholder,
+.login-form-wrap .login-body .form-group textarea::placeholder {
+  color: #f9fafc;
   opacity: 0.9;
+}
+.login-form-wrap .login-body textarea {
+  height: 140px !important;
+  padding: 16px !important;
 }
 .login-form-wrap .login-body .btn {
   border-radius: 4px;
@@ -1999,10 +2032,38 @@ select {
   font-size: 16px;
 }
 .login-form-wrap .link.style1 {
-  color: #ef7822;
+  color: #f8f8f8;
 }
 .login-form-wrap p {
   color: #fff;
+}
+.login-form-wrap .btnss {
+  display: flex;
+  gap: 16px;
+}
+.login-form-wrap .btnss button {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #08162c;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.3s ease-in-out;
+}
+.login-form-wrap .btnss button span {
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .login-form-wrap .btnss button span {
+    font-size: 10px;
+  }
+}
+.login-form-wrap .btnss button:first-child img {
+  filter: brightness(0) invert(1);
 }
 
 .or-text {
@@ -2832,13 +2893,18 @@ select {
     About  Section CSS
 -------------------------------*/
 .about-wrap .about-content .content-title h2 {
-  margin-bottom: 18px;
+  font-size: 24px;
 }
 .about-wrap .about-content .content-title p {
-  margin-bottom: 18px;
+  margin: 0;
+  font-size: 14px;
 }
-.about-wrap .about-content .content-title p:last-child {
-  margin-bottom: 0;
+.about-wrap .about-img-wrap {
+  position: relative;
+}
+.about-wrap .about-img-wrap .shabe {
+  position: absolute;
+  bottom: 0;
 }
 
 /*-------------------------------
@@ -2910,7 +2976,7 @@ select {
 }
 .auction-card .auction-img img {
   border-radius: 2px 2px 0 0;
-  aspect-ratio: 1/1;
+  aspect-ratio: 3/2;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.4s;
@@ -3097,7 +3163,7 @@ select {
 }
 .auction-card.style1 .auction-info-wrap {
   flex: 1;
-  padding: 22px 25px 25px;
+  padding: 16px;
   flex-direction: column;
   display: flex;
 }
@@ -5166,19 +5232,18 @@ select {
 }
 .checkbox label:before {
   content: "";
-  -webkit-appearance: none;
   background-color: transparent;
   border: 1px solid #ef7822;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   position: absolute;
   vertical-align: middle;
   cursor: pointer;
   margin-right: 5px;
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 6px;
 }
 .checkbox a {
   color: #ef7822;
@@ -5192,10 +5257,10 @@ select {
   content: "";
   display: block;
   position: absolute;
-  top: 7px;
+  top: 9px;
   left: 3px;
-  width: 9px;
-  height: 9px;
+  width: 6px;
+  height: 6px;
   border: none;
   background: #ef7822;
 }
@@ -6100,11 +6165,11 @@ article .author-info .author-name a {
   display: block;
 }
 .footer-wrap .footer-widget .footer-widget-title {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 400;
   color: #fff;
   margin-bottom: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   position: relative;
 }
 .footer-wrap .footer-widget .footer-widget-title:after {
@@ -6307,4 +6372,51 @@ article .author-info .author-name a {
 }
 .download_btns img {
   height: 44px;
+}
+
+.pay-methods {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pay-methods li {
+  margin-bottom: 8px;
+}
+.pay-methods li img {
+  height: 24px;
+}
+
+.otp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+.otp-container .otp-input {
+  border-radius: 4px;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  background: #08162c;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ef7822;
+  outline: none;
+  border: none;
+  box-shadow: rgba(6, 17, 36, 0.2) 0px 2px 8px 0px;
+}
+@media (max-width: 576px) {
+  .otp-container .otp-input {
+    width: 60px;
+  }
+}
+
+.resend_code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.resend_code a {
+  color: #ef7822;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

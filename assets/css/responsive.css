@@ -1259,7 +1259,7 @@
     text-align: center !important;
   }
   .hero-wrap.style1, .hero-wrap.style2, .hero-wrap.style3 {
-    padding: 110px 0 60px;
+    padding: 110px 0 0;
   }
   .hero-wrap.style1 .hero-content, .hero-wrap.style2 .hero-content, .hero-wrap.style3 .hero-content {
     margin-top: 30px;
@@ -1296,7 +1296,7 @@
     font-weight: 600;
   }
   .breadcrumb-wrap {
-    padding: 120px 0 40px;
+    padding: 120px 0 0;
   }
   .hero-wrap.style1 .hero-img-wrap .hero-nft-info {
     left: calc(50% + 25px);
@@ -1426,7 +1426,7 @@
     font-size: 28px;
   }
   .breadcrumb-wrap {
-    padding: 120px 0 40px;
+    padding: 120px 0 0;
   }
   .hero-wrap.style1 .hero-img-wrap .hero-nft-info {
     left: calc(50% + 25px);
@@ -1537,7 +1537,7 @@
     margin-right: auto;
   }
   .hero-wrap.style1 {
-    padding: 168px 0 104px;
+    padding: 168px 0 0;
   }
   .hero-wrap.style1 .hero-img-wrap .hero-nft-info {
     width: 440px;
