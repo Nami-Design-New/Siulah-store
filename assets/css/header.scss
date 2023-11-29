@@ -589,6 +589,7 @@ $clr_cove: #051124;
             margin: 0 !important;
             outline: none;
             border: none;
+            width: 26px;
             background: none;
             position: relative;
             i {
@@ -598,10 +599,14 @@ $clr_cove: #051124;
             small {
               position: absolute;
               right: -2px;
+              top: 0;
               width: 16px;
-              background: $clr_carnation;
+              background: #ef7822;
               height: 16px;
               font-size: 10px;
+              justify-content: center;
+              align-items: center;
+              display: flex;
               border-radius: 50%;
               color: #fff;
             }
