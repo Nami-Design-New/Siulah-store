@@ -6584,6 +6584,7 @@ article .author-info .author-name a {
   display: flex;
   align-items: center;
   padding: 0 32px;
+  border: 4px solid rgba(255, 255, 255, 0.0509803922);
 }
 .single-item-img .info .img {
   height: 48px;
@@ -7870,7 +7871,7 @@ article .author-info .author-name a {
   justify-content: space-between;
 }
 .auction-author-info .qu input {
-  width: 50%;
+  width: 46%;
   height: 40px;
   text-align: center;
   outline: none;
@@ -7880,7 +7881,7 @@ article .author-info .author-name a {
   border-radius: 4px;
 }
 .auction-author-info .qu button {
-  width: 22%;
+  width: 24%;
   height: 40px;
   outline: none;
   border: none;

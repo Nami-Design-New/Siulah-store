@@ -6367,6 +6367,7 @@ article {
     display: flex;
     align-items: center;
     padding: 0 32px;
+    border: 4px solid #ffffff0d;
     .img {
       height: 48px;
       display: flex;
@@ -7617,7 +7618,7 @@ article {
     width: 100%;
     justify-content: space-between;
     input {
-      width: 50%;
+      width: 46%;
       height: 40px;
       text-align: center;
       outline: none;
@@ -7627,7 +7628,7 @@ article {
       border-radius: 4px;
     }
     button {
-      width: 22%;
+      width: 24%;
       height: 40px;
       outline: none;
       border: none;
