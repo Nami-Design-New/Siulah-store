@@ -6383,6 +6383,8 @@ article .author-info .author-name a {
 .hero_swiper .swiper .swiper-slide img {
   height: 100%;
   border-radius: 8px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .categories {
@@ -6816,6 +6818,7 @@ article .author-info .author-name a {
 }
 .shopping_card .cardd .img {
   height: 120px;
+  min-width: 180px;
 }
 .shopping_card .cardd .img img {
   aspect-ratio: 3/2;
@@ -7212,12 +7215,15 @@ article .author-info .author-name a {
   right: 12px;
   width: 40px;
   height: 40px;
-  background: #ef7822;
-  color: #f8f8f8;
+  background: #f8f8f8;
+  color: #ef7822;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.auction-img span i {
+  font-size: 18px;
 }
 
 .profile_side_bar {
@@ -7824,4 +7830,18 @@ article .author-info .author-name a {
   .smallNav {
     display: flex;
   }
+}
+
+.single-item-author {
+  flex-wrap: nowrap !important;
+}
+
+.item-desc .single-item-author .single-item-bid {
+  width: 56px !important;
+}
+
+.item-desc .single-item-author .author-info,
+.item-desc .item-deadline-wrap .single-item-bid {
+  width: auto !important;
+  white-space: nowrap;
 }/*# sourceMappingURL=style.css.map */

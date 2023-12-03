@@ -6182,6 +6182,7 @@ article {
       img {
         height: 100%;
         border-radius: 8px;
+        object-fit: contain;
       }
     }
   }
@@ -6592,6 +6593,7 @@ article {
     gap: 16px;
     .img {
       height: 120px;
+      min-width: 180px;
       img {
         aspect-ratio: 3 / 2;
         height: 100%;
@@ -6970,12 +6972,15 @@ article {
     right: 12px;
     width: 40px;
     height: 40px;
-    background: $clr_carnation;
-    color: $clr_albastor;
+    background: $clr_albastor;
+    color: $clr_carnation;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    i {
+      font-size: 18px;
+    }
   }
 }
 .profile_side_bar {
@@ -7577,4 +7582,16 @@ article {
   @media (max-width: 992px) {
     display: flex;
   }
+}
+.single-item-author {
+  flex-wrap: nowrap !important;
+}
+.item-desc .single-item-author .single-item-bid {
+  width: 56px !important;
+}
+
+.item-desc .single-item-author .author-info,
+.item-desc .item-deadline-wrap .single-item-bid {
+  width: auto !important;
+  white-space: nowrap;
 }
