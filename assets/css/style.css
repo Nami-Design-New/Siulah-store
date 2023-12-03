@@ -7844,4 +7844,64 @@ article .author-info .author-name a {
 .item-desc .item-deadline-wrap .single-item-bid {
   width: auto !important;
   white-space: nowrap;
+}
+
+.auction-author-info {
+  margin-top: auto;
+  flex-direction: column;
+  align-items: baseline !important;
+  gap: 8px;
+}
+.auction-author-info .add_forsale {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.auction-author-info .add_forsale h6 {
+  margin: 0;
+  color: #f8f8f8;
+  font-weight: 400;
+}
+.auction-author-info .qu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.auction-author-info .qu input {
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  color: #f8f8f8;
+  background: none;
+  border: 1px solid #f8f8f8;
+  border-radius: 4px;
+}
+.auction-author-info .qu button {
+  width: 22%;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #ef7822;
+  color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.notify {
+  width: 100%;
+  background: #051124;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+.notify h6 {
+  margin-bottom: 4px;
+  color: #f8f8f8;
+  font-weight: 400;
+}
+.notify p {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */

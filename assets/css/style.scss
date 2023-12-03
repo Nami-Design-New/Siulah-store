@@ -7595,3 +7595,61 @@ article {
   width: auto !important;
   white-space: nowrap;
 }
+.auction-author-info {
+  margin-top: auto;
+  flex-direction: column;
+  align-items: baseline !important;
+  gap: 8px;
+  .add_forsale {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h6 {
+      margin: 0;
+      color: $clr_albastor;
+      font-weight: 400;
+    }
+  }
+  .qu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    input {
+      width: 50%;
+      height: 40px;
+      text-align: center;
+      outline: none;
+      color: $clr_albastor;
+      background: none;
+      border: 1px solid $clr_albastor;
+      border-radius: 4px;
+    }
+    button {
+      width: 22%;
+      height: 40px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background: $clr_carnation;
+      color: $clr_albastor;
+      border-radius: 4px;
+    }
+  }
+}
+.notify {
+  width: 100%;
+  background: $clr_pearl;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  h6{
+    margin-bottom: 4px;
+    color: $clr_albastor;
+    font-weight: 400;
+  }
+  p{
+    margin: 0;
+  }
+}
