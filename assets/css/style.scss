@@ -1947,554 +1947,170 @@ select {
 /*-------------------------------
     Hero  Section CSS
 -------------------------------*/
-.hero-wrap {
-  .hero-content {
-    span {
-      display: block;
-      margin-bottom: 10px;
-    }
-    h1 {
-      font-size: 44px;
-      font-weight: 600;
-      line-height: 1.3;
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 40px;
-      font-size: 14px;
-    }
-    .hero-btn {
-      a {
-        &:nth-child(1) {
-          margin-right: 15px;
-        }
-      }
-    }
+.hero_section {
+  height: calc(100vh - 80px);
+  max-height: 670px;
+  padding: 12px 10px;
+  margin-top: 80px;
+  background: $clr_mirage;
+  @media (max-width: 992px) {
+    height: initial;
+    max-height: initial;
+    margin-top: 55px;
   }
-  &.style1 {
-    position: relative;
-    z-index: 1;
-    padding: 108px 0 0;
-    background-color: $clr_pearl;
-    .hero-img-wrap {
-      position: relative;
-      z-index: 1;
-      .hero-shape-one {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 1200px;
+  .hero_container {
+    height: 100%;
+    margin: 0 auto;
+    .row {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      .col-lg-3,
+      .col-lg-6 {
         height: 100%;
-        z-index: -1;
-        @include transform(translate(-50%,-50%));
       }
-      img {
-        display: block;
-        margin: 0 auto;
-      }
-      .hero-nft-info {
-        background-image: url(../img/hero/bg-2.png);
-        background-position: center;
-        background-size: cover;
-        width: 440px;
-        position: absolute;
-        bottom: 0;
-        left: calc(50% + 45px);
-        border-radius: 3px;
-        @include transform(translateX(-50%));
-        background-color: #33456e;
-        padding: 20px 25px;
-        border: 3px solid rgba(255, 255, 255, 0.1);
-        .auction-info-wrap {
-          flex: 1;
-          h3 {
-            font-size: 20px;
-            margin: 0 0 15px;
-            a {
-              color: $clr_white;
-              &:hover {
-                color: $clr_carnation;
-              }
-            }
+      .inner-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        height: 100%;
+        &.sliderrr {
+          img {
+            aspect-ratio: 3 / 2;
           }
-          .auction-author-info {
-            @extend %flex_justify_between;
-            @extend %align_center;
-            .author-info {
-              .author-name {
-                h6 {
-                  margin: 0 0 5px;
-                  a {
-                    color: $clr_white;
-                    &:hover {
-                      color: $clr_carnation;
-                    }
-                  }
-                }
-                a {
-                  color: $clr_carnation;
-                }
-              }
-            }
-            .auction-item-stat {
-              h6 {
-                color: $clr_white;
-                margin: 0 0 5px;
-              }
-              span {
-                color: $clr_carnation;
-              }
-            }
+          @media (max-width: 576px) {
+            height: 50vh;
           }
-          .nft-deadline {
-            margin: 20px 0 0;
-            span {
-              font-family: $secondary_font;
-              display: block;
-              margin: 0 0 10px;
-              color: $clr_white;
-            }
-            .countdown {
-              @extend %flex_justify_between;
+        }
+        .swiper {
+          width: 100%;
+          height: 100%;
+          .swiper-pagination {
+            width: 160px;
+            left: initial;
+            right: 0;
+            .swiper-pagination-bullet {
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background: $clr_black;
               position: relative;
-              z-index: 1;
-              border-radius: 2px;
-              .cdown {
-                width: calc(25% - 8px);
-                text-align: left;
-                position: relative;
-                &:after {
-                  position: absolute;
-                  top: 45%;
-                  right: 0;
-                  content: ":";
-                  font-size: 20px;
-                  color: $clr_white;
-                  @include transform(translateY(-50%));
-                }
-                &:last-child {
-                  &:after {
-                    display: none;
-                  }
-                }
-                span,
-                p {
-                  color: $clr_offwhite;
-                }
-                span {
-                  display: inline-block;
-                  margin: 0 0 5px;
-                  font-size: 20px;
-                  font-weight: 600;
-                  color: $clr_white;
-                }
-                p {
-                  margin: 0;
-                  line-height: 1;
-                  font-size: 15px;
-                  font-weight: 300;
-                  display: inline-block;
-                }
-                &:last-child {
-                  margin-right: 0;
+              opacity: 1;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: $clr_white;
+              }
+              &.swiper-pagination-bullet-active {
+                background: $clr_white;
+                &::before {
+                  background: $clr_black;
                 }
               }
             }
           }
         }
-      }
-    }
-  }
-  &.style1,
-  &.style3 {
-    .hero-content {
-      span {
-        color: $clr_carnation;
-      }
-      h1 {
-        color: $clr_white;
-      }
-      p {
-        color: $clr_offwhite;
-      }
-    }
-  }
-  &.style2 {
-    background-color: $clr_link;
-    padding: 140px 0 80px;
-    z-index: 1;
-    position: relative;
-    .hero-shape-one {
-      position: absolute;
-      bottom: 0;
-      left: 58%;
-      @include transform(translateX(-50%));
-      z-index: -1;
-    }
-    .hero-nft-item {
-      background-image: url(../img/hero/bg-1.png);
-      border: 4px solid $clr_white;
-      border-radius: 4px;
-      padding: 30px;
-      .author-info-wrap {
-        @extend %flex_justify_between;
-        @extend %align_center;
-        .author-info {
-          background-color: $clr_white;
-          padding: 6px 14px;
-          a {
-            color: $clr_carnation;
-          }
-          .author-name {
-            a {
-              color: $clr_black;
-            }
+        .slide.center {
+          @media (max-width: 576px) {
+            height: 200px !important;
           }
         }
-        .btn {
-          background-color: $clr_pearl;
-          padding: 17px 35px;
-        }
-      }
-      .auction-img {
-        overflow: hidden;
-        margin: 20px 0 22px;
-        position: relative;
-        img {
-          @include transition(0.4s);
-        }
-        .item-popularity {
-          position: absolute;
-          top: 20px;
-          left: 20px;
-          background-color: $clr_black;
-          display: inline-block;
-          padding: 6px 12px;
-          color: $clr_white;
-          i {
-            position: relative;
-            top: 2px;
-            font-size: 15px;
-            margin-right: 7px;
+        .slide,
+        .swiper-slide {
+          height: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
           }
-        }
-      }
-      .auction-info-wrap {
-        h4 {
-          font-size: 22px;
-          margin: 0 0 20px;
-          a {
-            color: $clr_white;
-          }
-        }
-        .auction-author-info {
-          @extend %align_center;
-          @extend %flex_justify_between;
-          .auction-info {
-            width: 85px;
-            p,
-            span {
-              color: #eee;
+          .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(208deg, #00000020, #000000);
+            padding: 40px 24px;
+            display: flex;
+            justify-content: flex-end;
+            transition: .5s linear;
+            flex-direction: column;
+            h4 {
+              font-weight: 600;
+              font-size: 28px;
+              color: $clr_white;
+              line-height: 46px;
+              margin-bottom: 1rem;
+              @media (max-width: 576px) {
+                font-size: 18px;
+                line-height: 32px;
+              }
             }
             p {
-              margin: 0 0 5px;
-            }
-            h6 {
               color: $clr_white;
+              font-size: 12px;
+              line-height: 22px;
+              font-weight: 100;
             }
-          }
-          .auction-deadline {
-            width: calc(100% - 130px);
-            margin-left: 40px;
-            span {
-              color: #e1e1e1;
-              margin: 0 0 10px;
-              display: block;
+            h5 {
               font-weight: 500;
-              line-height: 1;
-              font-family: $secondary_font;
-            }
-            .countdown {
-              @extend %flex_justify_between;
-              width: 100%;
-              margin: 20px 0 0;
-              position: relative;
-              z-index: 1;
-              border-radius: 2px;
-              .cdown {
-                width: calc(25% - 8px);
-                text-align: left;
-                position: relative;
-                &:after {
-                  position: absolute;
-                  top: 50%;
-                  right: 0;
-                  content: ":";
-                  font-size: 20px;
-                  color: $clr_white;
-                  @include transform(translateY(-50%));
-                }
-                &:last-child {
-                  &:after {
-                    display: none;
-                  }
-                }
-                span {
-                  color: $clr_white;
-                }
-                span {
-                  display: inline-block;
-                  margin: 0 0 5px;
-                  font-size: 24px;
-                  font-weight: 600;
-                }
-                p {
-                  margin: 0;
-                  color: #eee;
-                  line-height: 1;
-                  display: inline-block;
-                }
-                &:last-child {
-                  margin-right: 0;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .hero-content {
-      & > span {
-        color: $clr_carnation;
-        display: block;
-        font-weight: 500;
-      }
-      span {
-        position: relative;
-        z-index: 1;
-        display: inline-block;
-        img {
-          position: absolute;
-          bottom: 9px;
-          left: 50%;
-          @include transform(translateX(-50%));
-          z-index: -1;
-        }
-      }
-    }
-  }
-  &.style3 {
-    position: relative;
-    background-color: $clr_pearl;
-    padding: 150px 0 80px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    .hero-shape-one,
-    .hero-shape-two {
-      position: absolute;
-      bottom: 200px;
-      z-index: -1;
-    }
-    .hero-shape-one {
-      right: 10%;
-    }
-    .hero-shape-two {
-      right: 15%;
-    }
-    .hero-shape-three {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      right: 0;
-    }
-    .hero-shape-four {
-      position: absolute;
-      z-index: -1;
-      bottom: 0;
-      left: 0;
-    }
-    &:before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: "";
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      background-color: rgba(249, 84, 55, 0.45);
-      filter: blur(342px);
-    }
-    &:after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      content: "";
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      background-color: rgba(249, 84, 55, 0.45);
-      filter: blur(342px);
-    }
-    .hero-nft-slider {
-      position: relative;
-      padding: 25px 25px 0 25px;
-      z-index: 1;
-      &:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: "";
-        width: 100%;
-        height: calc(100% - 75px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 2px;
-        z-index: -1;
-      }
-    }
-    .nft-slide-item {
-      .nft-bidder {
-        margin-left: 35px;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        li {
-          display: inline-block;
-          margin: 0 10px 0 -32px;
-          &:last-child {
-            position: relative;
-            top: -5px;
-          }
-          a {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            border: 3px solid $clr_white;
-            background-color: $clr_carnation;
-            @extend %flex_column_center;
-            text-align: center;
-            i {
-              font-size: 28px;
-              margin: 0 auto;
               color: $clr_white;
+              @media (max-width: 576px) {
+                font-size: 16px;
+              }
             }
-            img {
-              border-radius: 50%;
+            a {
+              width: fit-content;
+              margin-top: 16px;
+              font-size: 14px;
             }
+          }
+          &.swiper-slide-active {
+            .layer h4 {
+              animation: fadeInUp 1s 0.3s both;
+            }
+            .layer p {
+              animation: fadeInUp 1s 0.6s both;
+            }
+            .layer a {
+              animation: fadeInUp 1s 0.9s both;
+            }
+          }
+        }
+        .swiper-slide {
+          @media (max-width: 992px) {
+            height: auto;
+          }
+        }
+        &.left_grid {
+          .slide {
+            height: calc(50% - 4px);
           }
         }
       }
-      .nft-deadline-wrap {
-        @extend %align_center;
-        @extend %flex_justify_between;
-        background-color: $clr_white;
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        padding: 30px;
-        width: calc(100% - 60px);
-        border-radius: 2px;
-        .btn {
-          padding: 15px 22px;
-          border-radius: 3px;
+      @media (max-width: 992px) {
+        #order1 {
+          order: 1;
         }
-        .nft-deadline {
-          margin-left: auto;
-          span {
-            color: $clr_carnation;
-            margin: 0 0 6px;
-            display: block;
-            font-size: 14px;
-            font-weight: 500;
-          }
-          .countdown {
-            @extend %flex_justify_between;
-            position: relative;
-            z-index: 1;
-            border-radius: 2px;
-            .cdown {
-              text-align: center;
-              position: relative;
-              @extend %align_center;
-              margin-right: 13px;
-              padding-left: 13px;
-              &:after {
-                position: absolute;
-                top: 48%;
-                left: -3px;
-                content: ":";
-                font-size: 18px;
-                color: $clr_black;
-                @include transform(translateY(-50%));
-              }
-              &:first-child {
-                padding-left: 0;
-                &:after {
-                  display: none;
-                }
-              }
-              &:last-child {
-                margin-right: 0;
-                &:after {
-                  display: none;
-                }
-              }
-              &.second {
-                display: none;
-              }
-              span,
-              p {
-                color: $clr_black;
-              }
-              span {
-                display: inline-block;
-                font-size: 20px;
-                font-weight: 600;
-                margin: 0 3px 0 0;
-              }
-              p {
-                font-size: 20px;
-                font-weight: 600;
-                margin: 0;
-                line-height: 1;
-                display: inline-block;
-              }
-              &:last-child {
-                margin-right: 0;
-              }
-            }
+        #order2 {
+          order: 2;
+          .inner-section {
+            flex-direction: row;
           }
         }
-      }
-    }
-  }
-}
-.hero-nft-slider {
-  &.owl-carousel {
-    .owl-dots {
-      text-align: center;
-      margin-top: 20px;
-      button {
-        &.owl-dot {
-          display: inline-block;
-          margin: 0 6px;
-          position: relative;
-          bottom: -5px;
-          span {
-            display: inline-block;
-            width: 20px;
-            height: 8px;
-            border-radius: 50px;
-            background: $clr_albastor;
-            position: relative;
-            @include transition(0.4s);
-          }
-          &.active {
-            span {
-              width: 30px;
-              background: $clr_carnation;
-            }
-          }
+        #order3 {
+          order: 3;
         }
       }
     }
@@ -2508,10 +2124,12 @@ select {
     .content-title {
       h2 {
         font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 4px;
       }
       p {
         margin: 0;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
@@ -6351,9 +5969,11 @@ article {
     object-position: top;
     aspect-ratio: 3 /2;
     height: 100%;
+    border-radius: 8px;
   }
   .info {
     height: 80px;
+    gap: 12px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -7139,6 +6759,9 @@ article {
       height: auto;
       display: flex;
       align-items: center;
+      img {
+        height: 54px;
+      }
     }
     .info {
       display: flex;
@@ -7172,6 +6795,7 @@ article {
     i {
       color: $clr_albastor;
       font-size: 16px;
+      font-weight: 600;
     }
     &.active i {
       color: gold;
@@ -7277,7 +6901,7 @@ article {
     align-items: center;
     justify-content: center;
     img {
-      max-height: 100%;
+      height: 42px;
     }
   }
   .store_info {
@@ -7645,12 +7269,12 @@ article {
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 8px;
-  h6{
+  h6 {
     margin-bottom: 4px;
     color: $clr_albastor;
     font-weight: 400;
   }
-  p{
+  p {
     margin: 0;
   }
 }

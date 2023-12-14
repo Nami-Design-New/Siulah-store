@@ -391,28 +391,28 @@ select {
 /*---------------------------------
           Mixins & Animation CSS
 -----------------------------------*/
-.comment-item-wrap .comment-item, .post-author, .seller-card .seller-info-wrap, .pp-post-item, .search-area, .owl-carousel .owl-nav, .author-details-box .author-metainfo-wrap .author-metainfo, .item-desc .item-title .item-title-right, .item-desc .single-item-author .single-item-bid, .price, .bidding-popup .bidding-tablelist li, .author-details-box .single-author-info .author-metainfo-wrap, .activity-card, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .item-deadline-wrap, .item-desc .item-title, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header, .wp-block-quote, .author-details-box, .create-collection-form .radio-btn, .author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown, .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
+.comment-item-wrap .comment-item, .post-author, .seller-card .seller-info-wrap, .pp-post-item, .search-area, .owl-carousel .owl-nav, .author-details-box .author-metainfo-wrap .author-metainfo, .item-desc .item-title .item-title-right, .item-desc .single-item-author .single-item-bid, .price, .bidding-popup .bidding-tablelist li, .author-details-box .single-author-info .author-metainfo-wrap, .activity-card, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .item-deadline-wrap, .item-desc .item-title, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header, .wp-block-quote, .author-details-box, .create-collection-form .radio-btn, .author-info, .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
 .author-details-box .author-metainfo-wrap .author-metainfo .item-option span, .author-details-box .author-metainfo-wrap .author-metainfo .edit-profile, .activity-card .activity-card-action, .contact-item .contact-icon, .promo-card.style4 .promo-icon, .promo-card.style2 .promo-top .promo-icon, .promo-card.style3 .promo-top .promo-icon, .team-card .team-info, .item-desc .item-title .item-title-right .share-profile span,
-.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-bidder li a, .search-area, .header-wrap button.searchbtn, .social-profile li a, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .search-area, .header-wrap button.searchbtn, .social-profile li a, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   display: flex;
   flex-wrap: wrap;
 }
 
 .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
 .author-details-box .author-metainfo-wrap .author-metainfo .item-option span, .author-details-box .author-metainfo-wrap .author-metainfo .edit-profile, .activity-card .activity-card-action, .contact-item .contact-icon, .promo-card.style4 .promo-icon, .promo-card.style2 .promo-top .promo-icon, .promo-card.style3 .promo-top .promo-icon, .team-card .team-info, .item-desc .item-title .item-title-right .share-profile span,
-.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-bidder li a, .search-area, .header-wrap button.searchbtn, .social-profile li a, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .search-area, .header-wrap button.searchbtn, .social-profile li a, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
   flex-direction: column;
   justify-content: center;
 }
 
-.price, .wp-block-quote, .bidding-popup .bidding-tablelist li, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box, .activity-card, .seller-card .seller-info-wrap, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .create-collection-form .radio-btn, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-author .single-item-bid, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .author-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header {
+.price, .wp-block-quote, .bidding-popup .bidding-tablelist li, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box, .activity-card, .seller-card .seller-info-wrap, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .create-collection-form .radio-btn, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-author .single-item-bid, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .author-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center;
 }
 
-.price, .bidding-popup .bidding-tablelist li, .author-details-box .single-author-info .author-metainfo-wrap, .activity-card, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .item-deadline-wrap, .item-desc .item-title, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header {
+.price, .bidding-popup .bidding-tablelist li, .author-details-box .single-author-info .author-metainfo-wrap, .activity-card, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .item-deadline-wrap, .item-desc .item-title, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header {
   justify-content: space-between;
 }
 
@@ -1175,19 +1175,19 @@ select {
 
 .comment-item-wrap .comment-item, .post-author, .seller-card .seller-info-wrap, .pp-post-item, .search-area, .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
 .author-details-box .author-metainfo-wrap .author-metainfo .item-option span, .author-details-box .author-metainfo-wrap .author-metainfo .edit-profile, .activity-card .activity-card-action, .contact-item .contact-icon, .promo-card.style4 .promo-icon, .promo-card.style2 .promo-top .promo-icon, .promo-card.style3 .promo-top .promo-icon, .team-card .team-info, .item-desc .item-title .item-title-right .share-profile span,
-.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-bidder li a, .header-wrap button.searchbtn, .price, .wp-block-quote, .bidding-popup .bidding-tablelist li, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box, .activity-card, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .create-collection-form .radio-btn, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-author .single-item-bid, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .author-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header, .author-details-box .single-author-info .author-metainfo-wrap, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .item-deadline-wrap, .item-desc .item-title, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown, .item-desc .item-title .item-title-right, .owl-carousel .owl-nav, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a {
+.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .header-wrap button.searchbtn, .price, .wp-block-quote, .bidding-popup .bidding-tablelist li, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box, .activity-card, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .create-collection-form .radio-btn, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-author .single-item-bid, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .author-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header, .author-details-box .single-author-info .author-metainfo-wrap, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .item-deadline-wrap, .item-desc .item-title, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .item-desc .item-title .item-title-right, .owl-carousel .owl-nav, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a {
   display: flex;
   flex-wrap: wrap;
 }
 
 .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
 .author-details-box .author-metainfo-wrap .author-metainfo .item-option span, .author-details-box .author-metainfo-wrap .author-metainfo .edit-profile, .activity-card .activity-card-action, .contact-item .contact-icon, .promo-card.style4 .promo-icon, .promo-card.style2 .promo-top .promo-icon, .promo-card.style3 .promo-top .promo-icon, .team-card .team-info, .item-desc .item-title .item-title-right .share-profile span,
-.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-bidder li a, .search-area, .header-wrap button.searchbtn, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a {
+.item-desc .item-title .item-title-right .item-option span, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .search-area, .header-wrap button.searchbtn, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a {
   flex-direction: column;
   justify-content: center;
 }
 
-.price, .wp-block-quote, .bidding-popup .bidding-tablelist li, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box, .activity-card, .seller-card .seller-info-wrap, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .create-collection-form .radio-btn, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-author .single-item-bid, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .author-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header {
+.price, .wp-block-quote, .bidding-popup .bidding-tablelist li, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box, .activity-card, .seller-card .seller-info-wrap, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .create-collection-form .radio-btn, .collection-card .collection-info-wrap .collection-info, .item-desc .single-item-tab .item-history-wrap .history-item, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-author .single-item-bid, .item-desc .single-item-author, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .author-info, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card .auction-info-wrap .auction-title, .auction-card .auction-info-wrap .auction-author-info, .sidebar .sidebar-widget .sidebar-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
@@ -1216,6 +1216,7 @@ select {
 }
 
 .header-wrap {
+  background: #051124;
   position: absolute;
   top: 0;
   left: 0;
@@ -2397,501 +2398,189 @@ select {
 /*-------------------------------
     Hero  Section CSS
 -------------------------------*/
-.hero-wrap .hero-content span {
-  display: block;
-  margin-bottom: 10px;
+.hero_section {
+  height: calc(100vh - 80px);
+  max-height: 670px;
+  padding: 12px 10px;
+  margin-top: 80px;
+  background: #202c40;
 }
-.hero-wrap .hero-content h1 {
-  font-size: 44px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin-bottom: 20px;
+@media (max-width: 992px) {
+  .hero_section {
+    height: initial;
+    max-height: initial;
+    margin-top: 55px;
+  }
 }
-.hero-wrap .hero-content p {
-  margin-bottom: 40px;
-  font-size: 14px;
-}
-.hero-wrap .hero-content .hero-btn a:nth-child(1) {
-  margin-right: 15px;
-}
-.hero-wrap.style1 {
-  position: relative;
-  z-index: 1;
-  padding: 108px 0 0;
-  background-color: #051124;
-}
-.hero-wrap.style1 .hero-img-wrap {
-  position: relative;
-  z-index: 1;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-shape-one {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 1200px;
+.hero_section .hero_container {
   height: 100%;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-}
-.hero-wrap.style1 .hero-img-wrap img {
-  display: block;
   margin: 0 auto;
 }
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info {
-  background-image: url(../img/hero/bg-2.png);
-  background-position: center;
-  background-size: cover;
-  width: 440px;
-  position: absolute;
-  bottom: 0;
-  left: calc(50% + 45px);
-  border-radius: 3px;
-  transform: translateX(-50%);
-  background-color: #33456e;
-  padding: 20px 25px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap {
-  flex: 1;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap h3 {
-  font-size: 20px;
-  margin: 0 0 15px;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap h3 a {
-  color: #fff;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap h3 a:hover {
-  color: #ef7822;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info .author-info .author-name h6 {
-  margin: 0 0 5px;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info .author-info .author-name h6 a {
-  color: #fff;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info .author-info .author-name h6 a:hover {
-  color: #ef7822;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info .author-info .author-name a {
-  color: #ef7822;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info .auction-item-stat h6 {
-  color: #fff;
-  margin: 0 0 5px;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info .auction-item-stat span {
-  color: #ef7822;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline {
-  margin: 20px 0 0;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline span {
-  font-family: "Poppins", sans-serif;
-  display: block;
-  margin: 0 0 10px;
-  color: #fff;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown {
-  position: relative;
-  z-index: 1;
-  border-radius: 2px;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown {
-  width: calc(25% - 8px);
-  text-align: left;
-  position: relative;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown:after {
-  position: absolute;
-  top: 45%;
-  right: 0;
-  content: ":";
-  font-size: 20px;
-  color: #fff;
-  transform: translateY(-50%);
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown:last-child:after {
-  display: none;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown span,
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown p {
-  color: rgba(255, 255, 255, 0.75);
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown span {
-  display: inline-block;
-  margin: 0 0 5px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown p {
-  margin: 0;
-  line-height: 1;
-  font-size: 15px;
-  font-weight: 300;
-  display: inline-block;
-}
-.hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown .cdown:last-child {
-  margin-right: 0;
-}
-.hero-wrap.style1 .hero-content span, .hero-wrap.style3 .hero-content span {
-  color: #ef7822;
-}
-.hero-wrap.style1 .hero-content h1, .hero-wrap.style3 .hero-content h1 {
-  color: #fff;
-}
-.hero-wrap.style1 .hero-content p, .hero-wrap.style3 .hero-content p {
-  color: rgba(255, 255, 255, 0.75);
-}
-.hero-wrap.style2 {
-  background-color: #ecf0f9;
-  padding: 140px 0 80px;
-  z-index: 1;
-  position: relative;
-}
-.hero-wrap.style2 .hero-shape-one {
-  position: absolute;
-  bottom: 0;
-  left: 58%;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-.hero-wrap.style2 .hero-nft-item {
-  background-image: url(../img/hero/bg-1.png);
-  border: 4px solid #fff;
-  border-radius: 4px;
-  padding: 30px;
-}
-.hero-wrap.style2 .hero-nft-item .author-info-wrap .author-info {
-  background-color: #fff;
-  padding: 6px 14px;
-}
-.hero-wrap.style2 .hero-nft-item .author-info-wrap .author-info a {
-  color: #ef7822;
-}
-.hero-wrap.style2 .hero-nft-item .author-info-wrap .author-info .author-name a {
-  color: #000;
-}
-.hero-wrap.style2 .hero-nft-item .author-info-wrap .btn {
-  background-color: #051124;
-  padding: 17px 35px;
-}
-.hero-wrap.style2 .hero-nft-item .auction-img {
-  overflow: hidden;
-  margin: 20px 0 22px;
-  position: relative;
-}
-.hero-wrap.style2 .hero-nft-item .auction-img img {
-  transition: 0.4s;
-}
-.hero-wrap.style2 .hero-nft-item .auction-img .item-popularity {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background-color: #000;
-  display: inline-block;
-  padding: 6px 12px;
-  color: #fff;
-}
-.hero-wrap.style2 .hero-nft-item .auction-img .item-popularity i {
-  position: relative;
-  top: 2px;
-  font-size: 15px;
-  margin-right: 7px;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap h4 {
-  font-size: 22px;
-  margin: 0 0 20px;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap h4 a {
-  color: #fff;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-info {
-  width: 85px;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-info p,
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-info span {
-  color: #eee;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-info p {
-  margin: 0 0 5px;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-info h6 {
-  color: #fff;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline {
-  width: calc(100% - 130px);
-  margin-left: 40px;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline span {
-  color: #e1e1e1;
-  margin: 0 0 10px;
-  display: block;
-  font-weight: 500;
-  line-height: 1;
-  font-family: "Poppins", sans-serif;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown {
+.hero_section .hero_container .row {
+  height: 100%;
   width: 100%;
-  margin: 20px 0 0;
-  position: relative;
-  z-index: 1;
-  border-radius: 2px;
+  margin: 0 auto;
 }
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown {
-  width: calc(25% - 8px);
-  text-align: left;
-  position: relative;
+.hero_section .hero_container .row .col-lg-3,
+.hero_section .hero_container .row .col-lg-6 {
+  height: 100%;
 }
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown:after {
+.hero_section .hero_container .row .inner-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+}
+.hero_section .hero_container .row .inner-section.sliderrr img {
+  aspect-ratio: 3/2;
+}
+@media (max-width: 576px) {
+  .hero_section .hero_container .row .inner-section.sliderrr {
+    height: 50vh;
+  }
+}
+.hero_section .hero_container .row .inner-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+.hero_section .hero_container .row .inner-section .swiper .swiper-pagination {
+  width: 160px;
+  left: initial;
+  right: 0;
+}
+.hero_section .hero_container .row .inner-section .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #000;
+  position: relative;
+  opacity: 1;
+}
+.hero_section .hero_container .row .inner-section .swiper .swiper-pagination .swiper-pagination-bullet::before {
+  content: "";
   position: absolute;
   top: 50%;
-  right: 0;
-  content: ":";
-  font-size: 20px;
-  color: #fff;
-  transform: translateY(-50%);
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown:last-child:after {
-  display: none;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown span {
-  color: #fff;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown span {
-  display: inline-block;
-  margin: 0 0 5px;
-  font-size: 24px;
-  font-weight: 600;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown p {
-  margin: 0;
-  color: #eee;
-  line-height: 1;
-  display: inline-block;
-}
-.hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown .cdown:last-child {
-  margin-right: 0;
-}
-.hero-wrap.style2 .hero-content > span {
-  color: #ef7822;
-  display: block;
-  font-weight: 500;
-}
-.hero-wrap.style2 .hero-content span {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-}
-.hero-wrap.style2 .hero-content span img {
-  position: absolute;
-  bottom: 9px;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-.hero-wrap.style3 {
-  position: relative;
-  background-color: #051124;
-  padding: 150px 0 80px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.hero-wrap.style3 .hero-shape-one,
-.hero-wrap.style3 .hero-shape-two {
-  position: absolute;
-  bottom: 200px;
-  z-index: -1;
-}
-.hero-wrap.style3 .hero-shape-one {
-  right: 10%;
-}
-.hero-wrap.style3 .hero-shape-two {
-  right: 15%;
-}
-.hero-wrap.style3 .hero-shape-three {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-}
-.hero-wrap.style3 .hero-shape-four {
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-}
-.hero-wrap.style3:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  width: 250px;
-  height: 250px;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
-  background-color: rgba(249, 84, 55, 0.45);
-  filter: blur(342px);
+  background: #fff;
 }
-.hero-wrap.style3:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: rgba(249, 84, 55, 0.45);
-  filter: blur(342px);
+.hero_section .hero_container .row .inner-section .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff;
 }
-.hero-wrap.style3 .hero-nft-slider {
+.hero_section .hero_container .row .inner-section .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  background: #000;
+}
+@media (max-width: 576px) {
+  .hero_section .hero_container .row .inner-section .slide.center {
+    height: 200px !important;
+  }
+}
+.hero_section .hero_container .row .inner-section .slide,
+.hero_section .hero_container .row .inner-section .swiper-slide {
+  height: 100%;
   position: relative;
-  padding: 25px 25px 0 25px;
-  z-index: 1;
 }
-.hero-wrap.style3 .hero-nft-slider:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
+.hero_section .hero_container .row .inner-section .slide img,
+.hero_section .hero_container .row .inner-section .swiper-slide img {
   width: 100%;
-  height: calc(100% - 75px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  z-index: -1;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.hero-wrap.style3 .nft-slide-item .nft-bidder {
-  margin-left: 35px;
+.hero_section .hero_container .row .inner-section .slide .layer,
+.hero_section .hero_container .row .inner-section .swiper-slide .layer {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(208deg, rgba(0, 0, 0, 0.1254901961), #000000);
+  padding: 40px 24px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.5s linear;
+  flex-direction: column;
 }
-.hero-wrap.style3 .nft-slide-item .nft-bidder li {
-  display: inline-block;
-  margin: 0 10px 0 -32px;
-}
-.hero-wrap.style3 .nft-slide-item .nft-bidder li:last-child {
-  position: relative;
-  top: -5px;
-}
-.hero-wrap.style3 .nft-slide-item .nft-bidder li a {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  background-color: #ef7822;
-  text-align: center;
-}
-.hero-wrap.style3 .nft-slide-item .nft-bidder li a i {
+.hero_section .hero_container .row .inner-section .slide .layer h4,
+.hero_section .hero_container .row .inner-section .swiper-slide .layer h4 {
+  font-weight: 600;
   font-size: 28px;
-  margin: 0 auto;
+  color: #fff;
+  line-height: 46px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 576px) {
+  .hero_section .hero_container .row .inner-section .slide .layer h4,
+  .hero_section .hero_container .row .inner-section .swiper-slide .layer h4 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+.hero_section .hero_container .row .inner-section .slide .layer p,
+.hero_section .hero_container .row .inner-section .swiper-slide .layer p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 100;
+}
+.hero_section .hero_container .row .inner-section .slide .layer h5,
+.hero_section .hero_container .row .inner-section .swiper-slide .layer h5 {
+  font-weight: 500;
   color: #fff;
 }
-.hero-wrap.style3 .nft-slide-item .nft-bidder li a img {
-  border-radius: 50%;
+@media (max-width: 576px) {
+  .hero_section .hero_container .row .inner-section .slide .layer h5,
+  .hero_section .hero_container .row .inner-section .swiper-slide .layer h5 {
+    font-size: 16px;
+  }
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap {
-  background-color: #fff;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  padding: 30px;
-  width: calc(100% - 60px);
-  border-radius: 2px;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .btn {
-  padding: 15px 22px;
-  border-radius: 3px;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline {
-  margin-left: auto;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline span {
-  color: #ef7822;
-  margin: 0 0 6px;
-  display: block;
+.hero_section .hero_container .row .inner-section .slide .layer a,
+.hero_section .hero_container .row .inner-section .swiper-slide .layer a {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 16px;
   font-size: 14px;
-  font-weight: 500;
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown {
-  position: relative;
-  z-index: 1;
-  border-radius: 2px;
+.hero_section .hero_container .row .inner-section .slide.swiper-slide-active .layer h4,
+.hero_section .hero_container .row .inner-section .swiper-slide.swiper-slide-active .layer h4 {
+  animation: fadeInUp 1s 0.3s both;
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown {
-  text-align: center;
-  position: relative;
-  margin-right: 13px;
-  padding-left: 13px;
+.hero_section .hero_container .row .inner-section .slide.swiper-slide-active .layer p,
+.hero_section .hero_container .row .inner-section .swiper-slide.swiper-slide-active .layer p {
+  animation: fadeInUp 1s 0.6s both;
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown:after {
-  position: absolute;
-  top: 48%;
-  left: -3px;
-  content: ":";
-  font-size: 18px;
-  color: #000;
-  transform: translateY(-50%);
+.hero_section .hero_container .row .inner-section .slide.swiper-slide-active .layer a,
+.hero_section .hero_container .row .inner-section .swiper-slide.swiper-slide-active .layer a {
+  animation: fadeInUp 1s 0.9s both;
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown:first-child {
-  padding-left: 0;
+@media (max-width: 992px) {
+  .hero_section .hero_container .row .inner-section .swiper-slide {
+    height: auto;
+  }
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown:first-child:after {
-  display: none;
+.hero_section .hero_container .row .inner-section.left_grid .slide {
+  height: calc(50% - 4px);
 }
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown:last-child {
-  margin-right: 0;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown:last-child:after {
-  display: none;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown.second {
-  display: none;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown span,
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown p {
-  color: #000;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown span {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 3px 0 0;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown p {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1;
-  display: inline-block;
-}
-.hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown:last-child {
-  margin-right: 0;
-}
-
-.hero-nft-slider.owl-carousel .owl-dots {
-  text-align: center;
-  margin-top: 20px;
-}
-.hero-nft-slider.owl-carousel .owl-dots button.owl-dot {
-  display: inline-block;
-  margin: 0 6px;
-  position: relative;
-  bottom: -5px;
-}
-.hero-nft-slider.owl-carousel .owl-dots button.owl-dot span {
-  display: inline-block;
-  width: 20px;
-  height: 8px;
-  border-radius: 50px;
-  background: #f8f8f8;
-  position: relative;
-  transition: 0.4s;
-}
-.hero-nft-slider.owl-carousel .owl-dots button.owl-dot.active span {
-  width: 30px;
-  background: #ef7822;
+@media (max-width: 992px) {
+  .hero_section .hero_container .row #order1 {
+    order: 1;
+  }
+  .hero_section .hero_container .row #order2 {
+    order: 2;
+  }
+  .hero_section .hero_container .row #order2 .inner-section {
+    flex-direction: row;
+  }
+  .hero_section .hero_container .row #order3 {
+    order: 3;
+  }
 }
 
 /*-------------------------------
@@ -2899,10 +2588,12 @@ select {
 -------------------------------*/
 .about-wrap .about-content .content-title h2 {
   font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 4px;
 }
 .about-wrap .about-content .content-title p {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 .about-wrap .about-img-wrap {
   position: relative;
@@ -6141,21 +5832,21 @@ article .author-info .author-name a {
   color: #ef7822;
 }
 
-.price, .owl-carousel .owl-nav, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a, .header-wrap button.searchbtn, .search-area, .sidebar .sidebar-widget .sidebar-header, .pp-post-item, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .nft-deadline .countdown, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info .auction-deadline .countdown, .hero-wrap.style3 .nft-slide-item .nft-bidder li a, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown, .auction-card .auction-info-wrap .auction-author-info, .auction-card .auction-info-wrap .auction-title, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .author-info, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .item-desc .single-item-author, .item-desc .single-item-author .single-item-bid, .item-desc .item-title, .item-desc .item-title .item-title-right, .item-desc .item-title .item-title-right .share-profile span,
+.price, .owl-carousel .owl-nav, .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a, .header-wrap button.searchbtn, .search-area, .sidebar .sidebar-widget .sidebar-header, .pp-post-item, .auction-card .auction-info-wrap .auction-author-info, .auction-card .auction-info-wrap .auction-title, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style2 .countdown, .auction-card.style5 .countdown, .auction-card.style7 .countdown, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .author-info, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .item-desc .single-item-author, .item-desc .single-item-author .single-item-bid, .item-desc .item-title, .item-desc .item-title .item-title-right, .item-desc .item-title .item-title-right .share-profile span,
 .item-desc .item-title .item-title-right .item-option span, .item-desc .item-deadline-wrap, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .item-deadline-wrap .item-deadline .countdown, .item-desc .single-item-tab .item-history-wrap .history-item, .collection-card .collection-info-wrap .collection-info, .create-collection-form .radio-btn, .team-card .team-info, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .promo-card.style2 .promo-top .promo-icon, .promo-card.style3 .promo-top .promo-icon, .promo-card.style4 .promo-icon, .seller-card .seller-info-wrap, .contact-item .contact-icon, .activity-card, .activity-card .activity-card-action, .author-details-box, .author-details-box .single-author-info .author-metainfo-wrap, .author-details-box .author-metainfo-wrap .author-metainfo, .author-details-box .author-metainfo-wrap .author-metainfo .edit-profile, .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
 .author-details-box .author-metainfo-wrap .author-metainfo .item-option span, .bidding-popup .bidding-tablelist li, .wp-block-quote, .post-author, .comment-item-wrap .comment-item {
   display: flex;
   flex-wrap: wrap;
 }
 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a, .header-wrap button.searchbtn, .search-area, .hero-wrap.style3 .nft-slide-item .nft-bidder li a, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .item-desc .item-title .item-title-right .share-profile span,
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next, .social-profile li a, .header-wrap button.searchbtn, .search-area, .auction-card.style2 .countdown .cdown, .auction-card.style5 .countdown .cdown, .auction-card.style7 .countdown .cdown, .item-desc .item-title .item-title-right .share-profile span,
 .item-desc .item-title .item-title-right .item-option span, .team-card .team-info, .promo-card.style2 .promo-top .promo-icon, .promo-card.style3 .promo-top .promo-icon, .promo-card.style4 .promo-icon, .contact-item .contact-icon, .activity-card .activity-card-action, .author-details-box .author-metainfo-wrap .author-metainfo .edit-profile, .author-details-box .author-metainfo-wrap .author-metainfo .share-profile span,
 .author-details-box .author-metainfo-wrap .author-metainfo .item-option span {
   flex-direction: column;
   justify-content: center;
 }
 
-.price, .sidebar .sidebar-widget .sidebar-header, .hero-wrap.style1 .hero-img-wrap .hero-nft-info .auction-info-wrap .auction-author-info, .hero-wrap.style2 .hero-nft-item .author-info-wrap, .hero-wrap.style2 .hero-nft-item .auction-info-wrap .auction-author-info, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap, .hero-wrap.style3 .nft-slide-item .nft-deadline-wrap .nft-deadline .countdown .cdown, .auction-card .auction-info-wrap .auction-author-info, .auction-card .auction-info-wrap .auction-title, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .author-info, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .item-desc .single-item-author, .item-desc .single-item-author .single-item-bid, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-tab .item-history-wrap .history-item, .collection-card .collection-info-wrap .collection-info, .create-collection-form .radio-btn, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .seller-card .seller-info-wrap, .activity-card, .author-details-box, .author-details-box .author-metainfo-wrap .author-metainfo, .bidding-popup .bidding-tablelist li, .wp-block-quote {
+.price, .sidebar .sidebar-widget .sidebar-header, .auction-card .auction-info-wrap .auction-author-info, .auction-card .auction-info-wrap .auction-title, .auction-card.style1 .auction-info-wrap .auction-stock, .auction-card.style2 .auction-info-wrap .auction-stock, .auction-card.style5 .auction-info-wrap .auction-stock, .auction-card.style7 .auction-info-wrap .auction-stock, .auction-card.style1 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .price, .auction-card.style5 .auction-info-wrap .price, .auction-card.style7 .auction-info-wrap .price, .auction-card.style2 .auction-info-wrap .auction-author-info, .auction-card.style5 .auction-info-wrap .auction-author-info, .auction-card.style7 .auction-info-wrap .auction-author-info, .author-info, .author-card.style2 .author-card-info, .author-card.style4 .author-card-info, .author-card.style5 .author-card-info, .item-desc .single-item-author, .item-desc .single-item-author .single-item-bid, .item-desc .item-deadline-wrap .single-item-bid, .item-desc .single-item-tab .item-history-wrap .history-item, .collection-card .collection-info-wrap .collection-info, .create-collection-form .radio-btn, .blog-card.style1 .blog-info .blog-author-info, .blog-card.style2 .blog-info .blog-author-info, .blog-card.style3 .blog-info .blog-author-info, .seller-card .seller-info-wrap, .activity-card, .author-details-box, .author-details-box .author-metainfo-wrap .author-metainfo, .bidding-popup .bidding-tablelist li, .wp-block-quote {
   -webkit-box-align: center;
   -ms-flex-align: center;
   -ms-grid-row-align: center;
@@ -6568,9 +6259,11 @@ article .author-info .author-name a {
      object-position: top;
   aspect-ratio: 3/2;
   height: 100%;
+  border-radius: 8px;
 }
 .single-item-img .info {
   height: 80px;
+  gap: 12px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -7384,6 +7077,9 @@ article .author-info .author-name a {
   display: flex;
   align-items: center;
 }
+.orders .sCard .img img {
+  height: 54px;
+}
 .orders .sCard .info {
   display: flex;
   justify-content: center;
@@ -7416,6 +7112,7 @@ article .author-info .author-name a {
 .orders .save i {
   color: #f8f8f8;
   font-size: 16px;
+  font-weight: 600;
 }
 .orders .save.active i {
   color: gold;
@@ -7523,7 +7220,7 @@ article .author-info .author-name a {
   justify-content: center;
 }
 .store_banner .store_brand img {
-  max-height: 100%;
+  height: 42px;
 }
 .store_banner .store_info {
   display: flex;
